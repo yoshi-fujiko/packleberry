@@ -1,0 +1,16 @@
+// font-size
+$textDefaultSize: 13;
+$textLargeSize: ($textDefaultSize + 2);
+$textMediumSize: $textDefaultSize;
+$textSmallSize: ($textDefaultSize - 2);
+
+// line-height
+$textLineHeight: $textDefaultSize * 0.1;
+
+// font-family
+$textFontFamily: Verdana,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+
+// color
+$textDefaultColor: "#000";
+$textWarningColor: "#f00";
+$textNoteColor:    "#666";

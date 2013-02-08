@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SPRINGBOARD: html base template">
+  <meta name="keywords" content="SPRINGBOARD, sass, compass">
+  <title>SPRINGBOARD: html base template</title>
+  <script src="../../js/dev.js"></script>
+  <script>
+// 以下css
+  (function(){
+    DEV.changeStylesheet({
+      path: "../../css/",
+      file: ["base"],
+      pure: true
+    });
+  })();
+  </script>
+  
+</head>
+<body>
+
+<div class="wrapper column3">
+  <div class="container">
+    <div class="contents">
+      <div class="contents_inner">
+        ***** コンテンツ *****
+      </div><!-- {./contents_inner} -->
+    </div><!-- {./contents} -->
+    <div class="left_sidebar">
+      ***** 左サイドバー *****
+    </div><!-- {./left_sidebar} -->
+  </div><!-- {./container} -->
+  <div class="right_sidebar">
+    ***** 右サイドバー *****
+  </div><!-- {./right_sidebar} -->
+</div><!-- {./wrapper} -->
+
+</body>
+</html>
