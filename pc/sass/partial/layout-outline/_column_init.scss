@@ -1,2 +1,121 @@
-// 全体幅
 $wrapper_width: 100%;
+
+//============================================================
+// 全体幅
+//============================================================
+.wrapper {
+  width: $wrapper_width;
+  margin: 0 auto;
+  @include legacy-pie-clearfix();
+}
+
+//============================================================
+// 1カラム
+//============================================================
+@mixin column1(
+    $margin_top:50px,
+    $margin_bottom:20px
+   ) {
+	margin-top: $margin_top;
+	margin-bottom: $margin_bottom;
+	.container{
+		width: 100%;
+	}
+}
+
+//============================================================
+// 2カラム（サイドバー：左）
+//============================================================
+@mixin column2_left(
+    $margin_top:50px,
+    $margin_bottom:20px,
+    $left_sidebar_width:300px,
+    $left_sidebar_margin:20px
+   ) {
+	margin-top: $margin_top;
+	margin-bottom: $margin_bottom;
+	.container{
+		width: 100%;
+		float: right;
+		margin-left: -$left_sidebar_width;
+	}
+	
+	.contents_inner{
+		position: relative;
+		margin: 0 0 0 #{$left_sidebar_width + $left_sidebar_margin};
+	}
+	
+	.left_sidebar{
+		width: $left_sidebar_width;
+		float: left;
+	}
+}
+
+//============================================================
+// 2カラム（サイドバー：右）
+//============================================================
+@mixin column2_right(
+    $margin_top:50px,
+    $margin_bottom:20px,
+    $right_sidebar_width:300px,
+    $right_sidebar_margin:20px
+   ) {
+	margin-top: $margin_top;
+	margin-bottom: $margin_bottom;
+	.container{
+		width: 100%;
+		float: left;
+		margin-right: -$right_sidebar_width;
+	}
+	
+	.contents_inner{
+		position: relative;
+		margin: 0 #{$right_sidebar_width + $right_sidebar_margin} 0 0;
+	}
+	
+	.right_sidebar{
+		width: $right_sidebar_width;
+		float: right;
+	}
+}
+
+//============================================================
+// 3カラム
+//============================================================
+@mixin column3(
+    $margin_top:50px,
+    $margin_bottom:20px,
+    $left_sidebar_width:300px,
+    $left_sidebar_margin:20px,
+    $right_sidebar_width:200px,
+    $right_sidebar_margin:20px
+  ) {
+	margin-top: $margin_top;
+	margin-bottom: $margin_bottom;
+	.container {
+	  width: 100%;
+	  float: left;
+	  margin-right: -$right_sidebar_width;
+	}
+	
+	.contents {
+	  width: 100%;
+	  float: right;
+	  margin-left: -$left_sidebar_width;
+	}
+	
+	.contents_inner {
+	  position: relative;
+	  margin: 0 #{$right_sidebar_width + $right_sidebar_margin} 0 #{$left_sidebar_width + $left_sidebar_margin};
+	}
+	
+	.left_sidebar {
+	  width: $left_sidebar_width;
+	  float: left;
+	}
+	
+	.right_sidebar {
+	  width: $right_sidebar_width;
+	  float: right;
+	}
+}

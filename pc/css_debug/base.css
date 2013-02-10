@@ -1,35 +1,5 @@
 @charset "utf-8";
-/* line 1, ../sass/partial/layout-outline/_column.scss */
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-  *zoom: 1;
-}
-/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.wrapper:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-/* line 1, ../sass/partial/component/_clearfix.scss */
-.clearfix {
-  *zoom: 1;
-}
-/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-/* line 14, ../sass/partial/initialization/_global-reset.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,89 +15,177 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
-  border: 0 none;
-  font: inherit;
-  font-size: 13px;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
   vertical-align: baseline;
 }
 
-/* line 20, ../sass/partial/initialization/_global-reset.scss */
+/* line 19, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 html {
   line-height: 1;
-  color: #000;
-  background: #fff;
+  color: black;
+  background: white;
 }
 
-/* line 24, ../sass/partial/initialization/_global-reset.scss */
+/* line 23, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 ol.unstyled, ul.unstyled {
   list-style: none;
 }
 
-/* line 28, ../sass/partial/initialization/_global-reset.scss */
+/* line 27, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 31, ../sass/partial/initialization/_global-reset.scss */
+/* line 30, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 34, ../sass/partial/initialization/_global-reset.scss */
+/* line 33, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities-legacy.scss */
+/* line 96, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities-legacy.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 37, ../sass/partial/initialization/_global-reset.scss */
+/* line 36, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 a img {
   border: none;
 }
 
-/* line 108, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities-legacy.scss */
+/* line 108, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities-legacy.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   margin: 0;
   padding: 0;
-  border: 0 none;
+  border: 0;
+  outline: 0;
   display: block;
 }
 
-/* line 17, ../sass/partial/layout-outline/_column.scss */
+/* line 6, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  *zoom: 1;
+}
+/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.wrapper:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 6, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column1.scss */
+.column1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+/* line 21, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+.column1 .container {
+  width: 100%;
+}
+
+/* line 6, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column2_left.scss */
+.column2_left {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+/* line 37, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+.column2_left .container {
+  width: 100%;
+  float: right;
+  margin-left: -300px;
+}
+/* line 43, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+.column2_left .contents_inner {
+  position: relative;
+  margin: 0 0 0 320px;
+}
+/* line 48, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+.column2_left .left_sidebar {
+  width: 300px;
+  float: left;
+}
+
+/* line 6, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column2_right.scss */
+.column2_right {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+/* line 65, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+.column2_right .container {
+  width: 100%;
+  float: left;
+  margin-right: -300px;
+}
+/* line 71, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+.column2_right .contents_inner {
+  position: relative;
+  margin: 0 320px 0 0;
+}
+/* line 76, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+.column2_right .right_sidebar {
+  width: 300px;
+  float: right;
+}
+
+/* line 6, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column3.scss */
 .column3 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-/* line 20, ../sass/partial/layout-outline/_column.scss */
+/* line 95, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
 .column3 .container {
   width: 100%;
   float: left;
   margin-right: -200px;
 }
-/* line 26, ../sass/partial/layout-outline/_column.scss */
+/* line 101, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
 .column3 .contents {
   width: 100%;
   float: right;
   margin-left: -300px;
 }
-/* line 32, ../sass/partial/layout-outline/_column.scss */
+/* line 107, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
 .column3 .contents_inner {
   position: relative;
   margin: 0 220px 0 320px;
 }
-/* line 37, ../sass/partial/layout-outline/_column.scss */
+/* line 112, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
 .column3 .left_sidebar {
   width: 300px;
   float: left;
 }
-/* line 42, ../sass/partial/layout-outline/_column.scss */
+/* line 117, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
 .column3 .right_sidebar {
   width: 200px;
   float: right;
+}
+
+/* line 1, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/component/_clearfix.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
 }
