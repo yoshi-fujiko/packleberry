@@ -12,6 +12,16 @@
 }
 
 /* line 15, ../sass/dummy.scss */
-.h100 {
+.dmy_h100 {
   height: 100px;
+}
+
+/* line 19, ../sass/dummy.scss */
+.dmy_index_section {
+  margin-bottom: 40px;
+}
+
+/* line 23, ../sass/dummy.scss */
+.dmy_index_lead {
+  margin: 10px 0;
 }

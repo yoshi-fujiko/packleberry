@@ -73,9 +73,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 6, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 4, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .wrapper {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   *zoom: 1;
 }
@@ -339,31 +339,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 16, ../sass/base.scss */
 .column1 {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 21, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 19, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column1 .container {
   width: 100%;
 }
 
 /* line 20, ../sass/base.scss */
 .column2_left {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 37, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 35, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column2_left .container {
   width: 100%;
   float: right;
   margin-left: -300px;
 }
-/* line 43, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 41, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column2_left .contents_inner {
   position: relative;
   margin: 0 0 0 320px;
 }
-/* line 48, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 46, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column2_left .left_sidebar {
   width: 300px;
   float: left;
@@ -371,54 +371,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 24, ../sass/base.scss */
 .column2_right {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 65, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 63, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column2_right .container {
   width: 100%;
   float: left;
-  margin-right: -300px;
+  margin-right: -200px;
 }
-/* line 71, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 69, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column2_right .contents_inner {
   position: relative;
-  margin: 0 320px 0 0;
+  margin: 0 220px 0 0;
 }
-/* line 76, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 74, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column2_right .right_sidebar {
-  width: 300px;
+  width: 200px;
   float: right;
 }
 
 /* line 28, ../sass/base.scss */
 .column3 {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 95, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 93, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column3 .container {
   width: 100%;
   float: left;
   margin-right: -200px;
 }
-/* line 101, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 99, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column3 .contents {
   width: 100%;
   float: right;
   margin-left: -300px;
 }
-/* line 107, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 105, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column3 .contents_inner {
   position: relative;
   margin: 0 220px 0 320px;
 }
-/* line 112, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 110, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column3 .left_sidebar {
   width: 300px;
   float: left;
 }
-/* line 117, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column_init.scss */
+/* line 115, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_column.scss */
 .column3 .right_sidebar {
   width: 200px;
   float: right;

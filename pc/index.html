@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SPRINGBOARD: html base template">
+  <meta name="keywords" content="SPRINGBOARD, sass, compass">
+  <title>SPRINGBOARD: html base template</title>
+  <script src="./js/dev.js"></script>
+  <script>
+// 以下css
+  (function(){
+    DEV.changeStylesheet({
+      path: "./css/",
+      file: ["base", "dummy"],
+      pure: true
+    });
+  })();
+  </script>
+</head>
+<body>
+
+<div class="wrapper column1">
+  <div class="container">
+
+    <h1>SPRINGBORAD verβ</h1>
+    <section class="dmy_index_section">
+      <h1>HTML base file</h1>
+      <p class="dmy_index_lead">SPRINGBORADを使用するためのベースとなるHTMLファイル</p>
+      <ul>
+        <li><a href="kit/base.html">base html</a></li>
+      </ul>
+    </section>
+
+    <section class="dmy_index_section">
+      <h1>layout outline</h1>
+      <p class="dmy_index_lead">ヘッダー・フッター・1〜3カラム<br>
+        左・中央・右カラムの幅、マージンは要件により変更可能</p>
+      <ul>
+        <li><a href="kit/footer.html">header</a></li>
+        <li><a href="kit/header.html">footer</a></li>
+        <li><a href="kit/column.html">column</a></li>
+      </ul>
+    </section>
+    
+    <section class="dmy_index_section">
+      <h1>grid</h1>
+      <p class="dmy_index_lead">最大10分割のグリッドシステム</p>
+      <ul>
+        <li><a href="">grid</a></li>
+      </ul>
+    </section>
+    
+    <section class="dmy_index_section">
+      <h1>compornent</h1>
+      <p class="dmy_index_lead">各種コンポーネント</p>
+      <ul>
+        <li><a href="">Heading</a></li>
+        <li><a href="">sentence</a></li>
+        <li><a href="">table</a></li>
+        <li><a href="">form</a></li>
+        <li><a href="">button</a></li>
+        <li><a href="">list</a></li>
+        <li><a href="">image float</a></li>
+        <li><a href="">separator</a></li>
+      </ul>
+    </section>
+    
+    <section class="dmy_index_section">
+      <h1>skin</h1>
+      <p class="dmy_index_lead">外観を装飾するスキン。<br>
+        classに設定することを前提としているが、、、、。
+      </p>
+      <ul>
+        <li><a href="">color</a></li>
+        <li><a href="">font</a></li>
+        <li><a href="">border</a></li>
+        <li><a href="">margin</a></li>
+        <li><a href="">padding</a></li>
+        <li><a href="">size</a></li>
+      </ul>
+    </section>
+
+  </div><!-- {./container} -->
+</div><!-- {./wrapper} -->
+
+</body>
+</html>
