@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* line 8, ../sass/dummy.scss */
+.dmy_box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  background: #6cf;
+}
+
+/* line 15, ../sass/dummy.scss */
+.h100 {
+  height: 100px;
+}

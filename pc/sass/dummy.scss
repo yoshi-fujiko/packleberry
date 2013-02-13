@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+// compass
+@import "compass/css3";
+@import "compass/support";
+@import "compass/utilities";
+
+.dmy_box {
+  @include border-radius();
+  text-align: center;
+  padding: 5px;
+  background: #6cf;
+}
+
+.h100 {
+  height: 100px;
+}

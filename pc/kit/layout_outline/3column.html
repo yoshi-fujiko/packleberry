@@ -11,7 +11,7 @@
   (function(){
     DEV.changeStylesheet({
       path: "../../css/",
-      file: ["base"],
+      file: ["base", "dummy"],
       pure: true
     });
   })();
@@ -24,15 +24,27 @@
   <div class="container">
     <div class="contents">
       <div class="contents_inner">
-        ***** コンテンツ *****
+
+<!--dummy box-->
+<div class="dmy_box h100">コンテンツ</div>
+<!--/dummy box-->
+
       </div><!-- {./contents_inner} -->
     </div><!-- {./contents} -->
     <div class="left_sidebar">
-      ***** 左サイドバー *****
+
+<!--dummy box-->
+<div class="dmy_box h100">左サイドバー</div>
+<!--/dummy box-->
+
     </div><!-- {./left_sidebar} -->
   </div><!-- {./container} -->
   <div class="right_sidebar">
-    ***** 右サイドバー *****
+
+<!--dummy box-->
+<div class="dmy_box h100">右サイドバー</div>
+<!--/dummy box-->
+
   </div><!-- {./right_sidebar} -->
 </div><!-- {./wrapper} -->
 

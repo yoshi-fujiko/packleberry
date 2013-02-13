@@ -11,7 +11,7 @@
 (function(){
 DEV.changeStylesheet({
 path: "../../css/",
-file: ["base"],
+file: ["base", "dummy"],
 pure: true
 });
 })();
@@ -21,12 +21,20 @@ pure: true
 
 <div class="wrapper column2_left">
 	<div class="container">
-		<div class="contents_inner" style="background:#fcc;">
-		******コンテンツ******
+		<div class="contents_inner">
+
+<!--dummy box-->
+<div class="dmy_box h100">コンテンツ</div>
+<!--/dummy box-->
+
 		</div>
 	</div>
-	<div class="left_sidebar" style="background:#ccf;">
-	******サイドバー******
+	<div class="left_sidebar">
+
+<!--dummy box-->
+<div class="dmy_box h100">左サイドバー</div>
+<!--/dummy box-->
+
 	</div>
 </div>
 

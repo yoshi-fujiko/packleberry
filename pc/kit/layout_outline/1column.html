@@ -11,7 +11,7 @@
   (function(){
     DEV.changeStylesheet({
       path: "../../css/",
-      file: ["base"],
+      file: ["base", "dummy"],
       pure: true
     });
   })();
@@ -22,7 +22,11 @@
 
 <div class="wrapper column1">
   <div class="container">
-	***** コンテンツ *****
+
+<!--dummy box-->
+<div class="dmy_box h100">コンテンツ</div>
+<!--/dummy box-->
+
   </div><!-- {./container} -->
 </div><!-- {./wrapper} -->
 
