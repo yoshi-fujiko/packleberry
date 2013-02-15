@@ -1,0 +1,36 @@
+//============================================================
+// font-size
+//============================================================
+@mixin textHuge {
+  font-size: $textHugeSize + $textUnit;
+}
+
+@mixin textLarge {
+  font-size: $textLargeSize + $textUnit;
+}
+
+@mixin textMedium {
+  font-size: $textMediumSize + $textUnit;
+}
+
+@mixin textSmall {
+  font-size: $textSmallSize + $textUnit;
+}
+
+//============================================================
+// line-height
+//============================================================
+@mixin sentence {
+  line-height: $textLineHeight;
+}
+
+//============================================================
+// font-weight
+//============================================================
+@mixin textNormal {
+  font-weight: $textNoramlWeight;
+}
+
+@mixin textBold {
+  font-weight: $textBoldWeight
+}
