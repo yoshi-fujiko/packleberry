@@ -2,7 +2,7 @@
 // wrapper
 //============================================================
 .wrapper {
-  width: $wrapper_width;
+  width: $wrapperWidth;
   margin: 0 auto;
   @include legacy-pie-clearfix();
 }
@@ -11,11 +11,11 @@
 // 1カラム
 //============================================================
 @mixin column1(
-    $wrapper_margin_top:$def_wrapper_margin_top,
-    $wrapper_margin_bottom:$def_wrapper_margin_bottom
+    $wrapperMarginTop:$wrapperDefaultMarginTop,
+    $wrapperMarginBottom:$wrapperDefaultMarginBottm
    ) {
-	margin-top: $wrapper_margin_top;
-	margin-bottom: $wrapper_margin_bottom;
+	margin-top: $wrapperMarginTop;
+	margin-bottom: $wrapperMarginBottom;
 	.container{
 		width: 100%;
 	}
@@ -25,26 +25,26 @@
 // 2カラム（サイドバー：左）
 //============================================================
 @mixin column2_left(
-    $wrapper_margin_top:$def_wrapper_margin_top,
-    $wrapper_margin_bottom:$def_wrapper_margin_bottom,
-    $left_sidebar_width:$def_left_sidebar_width,
-    $left_sidebar_margin:$def_left_sidebar_margin
+    $wrapperMarginTop:$wrapperDefaultMarginTop,
+    $wrapperMarginBottom:$wrapperDefaultMarginBottm,
+    $leftSidebarWidth:$leftSidebarDefaultWidth,
+    $leftSidebarMargin:$leftSidebarDefaultMargin
    ) {
-	margin-top: $wrapper_margin_top;
-	margin-bottom: $wrapper_margin_bottom;
+	margin-top: $wrapperMarginTop;
+	margin-bottom: $wrapperMarginBottom;
 	.container{
 		width: 100%;
 		float: right;
-		margin-left: -$left_sidebar_width;
+		margin-left: -$leftSidebarWidth;
 	}
 	
 	.contents_inner{
 		position: relative;
-		margin: 0 0 0 #{$left_sidebar_width + $left_sidebar_margin};
+		margin: 0 0 0 #{$leftSidebarWidth + $leftSidebarMargin};
 	}
 	
 	.left_sidebar{
-		width: $left_sidebar_width;
+		width: $leftSidebarWidth;
 		float: left;
 	}
 }
@@ -53,26 +53,26 @@
 // 2カラム（サイドバー：右）
 //============================================================
 @mixin column2_right(
-    $wrapper_margin_top:$def_wrapper_margin_top,
-    $wrapper_margin_bottom:$def_wrapper_margin_bottom,
-    $right_sidebar_width:$def_right_sidebar_width,
-    $right_sidebar_margin:$def_right_sidebar_margin
+    $wrapperMarginTop:$wrapperDefaultMarginTop,
+    $wrapperMarginBottom:$wrapperDefaultMarginBottm,
+    $rightSidebarWidth:$rightSidebarDefaultWidth,
+    $rightSidebarMargin:$rightSidebarDefaultMargin
    ) {
-	margin-top: $wrapper_margin_top;
-	margin-bottom: $wrapper_margin_bottom;
+	margin-top: $wrapperMarginTop;
+	margin-bottom: $wrapperMarginBottom;
 	.container{
 		width: 100%;
 		float: left;
-		margin-right: -$right_sidebar_width;
+		margin-right: -$rightSidebarWidth;
 	}
 	
 	.contents_inner{
 		position: relative;
-		margin: 0 #{$right_sidebar_width + $right_sidebar_margin} 0 0;
+		margin: 0 #{$rightSidebarWidth + $rightSidebarMargin} 0 0;
 	}
 	
 	.right_sidebar{
-		width: $right_sidebar_width;
+		width: $rightSidebarWidth;
 		float: right;
 	}
 }
@@ -81,39 +81,39 @@
 // 3カラム
 //============================================================
 @mixin column3(
-    $wrapper_margin_top:$def_wrapper_margin_top,
-    $wrapper_margin_bottom:$def_wrapper_margin_bottom,
-    $left_sidebar_width:$def_left_sidebar_width,
-    $left_sidebar_margin:$def_left_sidebar_margin,
-    $right_sidebar_width:$def_right_sidebar_width,
-    $right_sidebar_margin:$def_right_sidebar_margin
+    $wrapperMarginTop:$wrapperDefaultMarginTop,
+    $wrapperMarginBottom:$wrapperDefaultMarginBottm,
+    $leftSidebarWidth:$leftSidebarDefaultWidth,
+    $leftSidebarMargin:$leftSidebarDefaultMargin,
+    $rightSidebarWidth:$rightSidebarDefaultWidth,
+    $rightSidebarMargin:$rightSidebarDefaultMargin
   ) {
-	margin-top: $wrapper_margin_top;
-	margin-bottom: $wrapper_margin_bottom;
+	margin-top: $wrapperMarginTop;
+	margin-bottom: $wrapperMarginBottom;
 	.container {
 	  width: 100%;
 	  float: left;
-	  margin-right: -$right_sidebar_width;
+	  margin-right: -$rightSidebarWidth;
 	}
 	
 	.contents {
 	  width: 100%;
 	  float: right;
-	  margin-left: -$left_sidebar_width;
+	  margin-left: -$leftSidebarWidth;
 	}
 	
 	.contents_inner {
 	  position: relative;
-	  margin: 0 #{$right_sidebar_width + $right_sidebar_margin} 0 #{$left_sidebar_width + $left_sidebar_margin};
+	  margin: 0 #{$rightSidebarWidth + $rightSidebarMargin} 0 #{$leftSidebarWidth + $leftSidebarMargin};
 	}
 	
 	.left_sidebar {
-	  width: $left_sidebar_width;
+	  width: $leftSidebarWidth;
 	  float: left;
 	}
 	
 	.right_sidebar {
-	  width: $right_sidebar_width;
+	  width: $rightSidebarWidth;
 	  float: right;
 	}
 }

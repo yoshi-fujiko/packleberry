@@ -3,29 +3,29 @@
 }
 
 @mixin grid_width($num:"") {
-  width: #{($grid_out_width / ($grid_num / $num))}#{$grid_out_width_unit};
+  width: #{($gridOutWidth / ($gridNum / $num))}#{$gridOutWidthUnit};
 }
 
-@mixin grid_offset($num:"") {
-  margin-left: #{($grid_out_width / ($grid_num / $num))}#{$grid_out_width_unit};
+@mixin grid_offset($dir:"", $num:"") {
+  margin-#{$dir}: #{($gridOutWidth / ($gridNum / $num))}#{$gridOutWidthUnit};
 }
 
-@for $i from 1 through $grid_num {
-  .divLeft#{$i} {
-    @include grid_width($i);
-    float: right;
-  }
-  .divRight#{$i} {
+@for $i from 1 through $gridNum {
+  .grid_left#{$i} {
     @include grid_width($i);
     float: left;
   }
+  .grid_right#{$i} {
+    @include grid_width($i);
+    float: right;
+  }
 }
 
-@for $i from 1 through $grid_num {
-  .divLeftOffset#{$i} {
-    @include grid_offset($i);
+@for $i from 1 through $gridNum {
+  .grid_left_offset#{$i} {
+    @include grid_offset("left",$i);
   }
-  .divRightOffset#{$i} {
-    @include grid_offset($i);
+  .grid_right_offset#{$i} {
+    @include grid_offset("right",$i);
   }
 }

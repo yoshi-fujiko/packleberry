@@ -1,4 +1,4 @@
-# HTML/SASSテンプレート
+# packleberry: HTML/SASSテンプレート
 ***
 
 ## What's this?
@@ -11,4 +11,5 @@ HTML/SASSテンプレートです。
 ## NOTE
 
 == 鋭意開発中 ==
-開発ネーム：packleberry!
+
+

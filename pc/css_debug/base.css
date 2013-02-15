@@ -15,20 +15,17 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
+  border: 0 none;
+  font: inherit;
+  font-size: 13px;
   vertical-align: baseline;
 }
 
 /* line 19, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 html {
   line-height: 1;
-  color: black;
-  background: white;
+  color: #333;
+  background: #fff;
 }
 
 /* line 23, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
@@ -38,7 +35,7 @@ ol.unstyled, ul.unstyled {
 
 /* line 27, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/initialization/_global-reset.scss */
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
   vertical-align: middle;
 }
@@ -68,8 +65,7 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
+  border: 0 none;
   display: block;
 }
 
@@ -89,6 +85,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   visibility: hidden;
 }
 
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_header.scss */
+.header {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/layout-outline/_footer.scss */
+.footer {
+  width: 95%;
+  margin: 0 auto;
+}
+
 /* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .row {
   *zoom: 1;
@@ -104,223 +112,257 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft1 {
-  width: 10%;
-  float: right;
-}
-
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight1 {
+.grid_left1 {
   width: 10%;
   float: left;
 }
 
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right1 {
+  width: 10%;
+  float: right;
+}
+
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft2 {
+.grid_left2 {
+  width: 20%;
+  float: left;
+}
+
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right2 {
   width: 20%;
   float: right;
 }
 
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight2 {
-  width: 20%;
-  float: left;
-}
-
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft3 {
-  width: 30%;
-  float: right;
-}
-
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight3 {
+.grid_left3 {
   width: 30%;
   float: left;
 }
 
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right3 {
+  width: 30%;
+  float: right;
+}
+
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft4 {
+.grid_left4 {
+  width: 40%;
+  float: left;
+}
+
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right4 {
   width: 40%;
   float: right;
 }
 
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight4 {
-  width: 40%;
-  float: left;
-}
-
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft5 {
-  width: 50%;
-  float: right;
-}
-
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight5 {
+.grid_left5 {
   width: 50%;
   float: left;
 }
 
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right5 {
+  width: 50%;
+  float: right;
+}
+
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft6 {
+.grid_left6 {
+  width: 60%;
+  float: left;
+}
+
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right6 {
   width: 60%;
   float: right;
 }
 
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight6 {
-  width: 60%;
-  float: left;
-}
-
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft7 {
-  width: 70%;
-  float: right;
-}
-
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight7 {
+.grid_left7 {
   width: 70%;
   float: left;
 }
 
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right7 {
+  width: 70%;
+  float: right;
+}
+
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft8 {
+.grid_left8 {
+  width: 80%;
+  float: left;
+}
+
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right8 {
   width: 80%;
   float: right;
 }
 
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight8 {
-  width: 80%;
-  float: left;
-}
-
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft9 {
-  width: 90%;
-  float: right;
-}
-
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight9 {
+.grid_left9 {
   width: 90%;
   float: left;
 }
 
-/* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeft10 {
-  width: 100%;
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right9 {
+  width: 90%;
   float: right;
 }
 
-/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRight10 {
+/* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_left10 {
   width: 100%;
   float: left;
 }
 
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
+.grid_right10 {
+  width: 100%;
+  float: right;
+}
+
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset1 {
+.grid_left_offset1 {
   margin-left: 10%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset1 {
-  margin-left: 10%;
+.grid_right_offset1 {
+  margin-right: 10%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset2 {
+.grid_left_offset2 {
   margin-left: 20%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset2 {
-  margin-left: 20%;
+.grid_right_offset2 {
+  margin-right: 20%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset3 {
+.grid_left_offset3 {
   margin-left: 30%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset3 {
-  margin-left: 30%;
+.grid_right_offset3 {
+  margin-right: 30%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset4 {
+.grid_left_offset4 {
   margin-left: 40%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset4 {
-  margin-left: 40%;
+.grid_right_offset4 {
+  margin-right: 40%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset5 {
+.grid_left_offset5 {
   margin-left: 50%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset5 {
-  margin-left: 50%;
+.grid_right_offset5 {
+  margin-right: 50%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset6 {
+.grid_left_offset6 {
   margin-left: 60%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset6 {
-  margin-left: 60%;
+.grid_right_offset6 {
+  margin-right: 60%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset7 {
+.grid_left_offset7 {
   margin-left: 70%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset7 {
-  margin-left: 70%;
+.grid_right_offset7 {
+  margin-right: 70%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset8 {
+.grid_left_offset8 {
   margin-left: 80%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset8 {
-  margin-left: 80%;
+.grid_right_offset8 {
+  margin-right: 80%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset9 {
+.grid_left_offset9 {
   margin-left: 90%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset9 {
-  margin-left: 90%;
+.grid_right_offset9 {
+  margin-right: 90%;
 }
 
 /* line 25, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divLeftOffset10 {
+.grid_left_offset10 {
   margin-left: 100%;
 }
 
 /* line 28, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.divRightOffset10 {
-  margin-left: 100%;
+.grid_right_offset10 {
+  margin-right: 100%;
+}
+
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/heading/_heading1-lv1.scss */
+.heading1_lv1 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/heading/_heading1-lv2.scss */
+.heading1_lv2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/heading/_heading2-lv1.scss */
+.heading2_lv1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/heading/_heading2-lv2.scss */
+.heading2_lv2 {
+  font-size: 15px;
+}
+
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/heading/_heading3-lv1.scss */
+.heading3_lv1 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/heading/_heading4-lv1.scss */
+.heading4_lv1 {
+  font-size: 13px;
 }
 
 /* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/_clearfix.scss */
