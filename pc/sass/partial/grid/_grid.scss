@@ -1,31 +1,15 @@
 .row {
+  width: #{($gridOutWidth + $gridMargin)}#{$gridUnit};
+  margin-right: -$gridMargin+$gridUnit;
   @include legacy-pie-clearfix();
 }
 
-@mixin grid_width($num:"") {
-  width: #{($gridOutWidth / ($gridNum / $num))}#{$gridOutWidthUnit};
-}
-
-@mixin grid_offset($dir:"", $num:"") {
-  margin-#{$dir}: #{($gridOutWidth / ($gridNum / $num))}#{$gridOutWidthUnit};
-}
+$gridDivisionSize: ($gridOutWidth + $gridMargin) / $gridNum;
 
 @for $i from 1 through $gridNum {
-  .grid_left#{$i} {
-    @include grid_width($i);
-    float: left;
-  }
-  .grid_right#{$i} {
-    @include grid_width($i);
+  .span#{$i} {
+    width: #{($gridDivisionSize * $i) - $gridMargin}#{$gridUnit};
+    margin-right: #{$gridMargin}#{$gridUnit};
     float: right;
-  }
-}
-
-@for $i from 1 through $gridNum {
-  .grid_left_offset#{$i} {
-    @include grid_offset("left",$i);
-  }
-  .grid_right_offset#{$i} {
-    @include grid_offset("right",$i);
   }
 }
