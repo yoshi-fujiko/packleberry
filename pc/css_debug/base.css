@@ -97,104 +97,88 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0 auto;
 }
 
-/* line 1, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
-.row {
-  width: 102%;
-  margin-right: "-2%";
-  *zoom: 1;
-}
-/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.row:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span1 {
   width: 6.33333%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span2 {
   width: 14.66667%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span3 {
   width: 23%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span4 {
   width: 31.33333%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span5 {
   width: 39.66667%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span6 {
   width: 48%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span7 {
   width: 56.33333%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span8 {
   width: 64.66667%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span9 {
   width: 73%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span10 {
   width: 81.33333%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span11 {
   width: 89.66667%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
-/* line 10, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
+/* line 13, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/grid/_grid.scss */
 .span12 {
   width: 98%;
   margin-right: 2%;
-  float: right;
+  float: left;
 }
 
 /* line 1, /Users/yoshihiro/Desktop/work/packleberry/pc/sass/partial/component/heading/_heading1-lv1.scss */
@@ -330,4 +314,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .column3 .right_sidebar {
   width: 200px;
   float: right;
+}
+
+/* line 37, ../sass/base.scss */
+.row {
+  width: 102%;
+  margin: 0 -2% 20px 0;
+  *zoom: 1;
+}
+/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.row:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
 }

@@ -1,6 +1,9 @@
-.row {
+@mixin row(
+		$rowMargnTop:$rowDefaultMarginTop,
+		$rowMargnBottom:$rowDefaultMarginBottom
+	) {
   width: #{($gridOutWidth + $gridMargin)}#{$gridUnit};
-  margin-right: -$gridMargin+$gridUnit;
+  margin: $rowMargnTop -#{$gridMargin}#{$gridUnit} $rowMargnBottom 0;
   @include legacy-pie-clearfix();
 }
 
@@ -10,6 +13,6 @@ $gridDivisionSize: $gridOutWidth / $gridNum;
   .span#{$i} {
     width: #{($gridDivisionSize * $i) - $gridMargin}#{$gridUnit};
     margin-right: #{$gridMargin}#{$gridUnit};
-    float: right;
+    float: left;
   }
 }
