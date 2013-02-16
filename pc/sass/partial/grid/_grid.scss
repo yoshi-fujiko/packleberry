@@ -4,7 +4,7 @@
   @include legacy-pie-clearfix();
 }
 
-$gridDivisionSize: ($gridOutWidth + $gridMargin) / $gridNum;
+$gridDivisionSize: $gridOutWidth / $gridNum;
 
 @for $i from 1 through $gridNum {
   .span#{$i} {
