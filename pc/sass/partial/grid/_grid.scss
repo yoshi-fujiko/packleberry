@@ -7,12 +7,12 @@
   @include legacy-pie-clearfix();
 }
 
-$gridDivisionSize: $gridOutWidth / $gridNum;
-
-@for $i from 1 through $gridNum {
-  .span#{$i} {
-    width: #{($gridDivisionSize * $i) - $gridMargin}#{$gridUnit};
-    margin-right: #{$gridMargin}#{$gridUnit};
-    float: left;
+@mixin span {
+  @for $i from 1 through $gridNum {
+    .span#{$i} {
+      width: #{($gridOutWidth / $gridNum) * $i - $gridMargin}#{$gridUnit};
+      margin-right: #{$gridMargin}#{$gridUnit};
+      float: left;
+    }
   }
 }
