@@ -1,16 +1,27 @@
 @mixin row(
 		$rowMargnTop:$rowDefaultMarginTop,
-		$rowMargnBottom:$rowDefaultMarginBottom
+		$rowMargnBottom:$rowDefaultMarginBottom,
+    $rowWidth:$rowDefaultWidth,
+    $gridMargin:$gridDefaultMargin,
+    $gridUnit:$gridDefaultUnit
 	) {
-  width: #{($gridOutWidth + $gridMargin)}#{$gridUnit};
-  margin: $rowMargnTop -#{$gridMargin}#{$gridUnit} $rowMargnBottom 0;
+  width: #{($rowWidth + $gridMargin)}#{$gridUnit};
+  margin: #{$rowMargnTop} auto #{$rowMargnBottom};
   @include legacy-pie-clearfix();
+  @include span($rowWidth, $gridMargin, $gridUnit);
+  .grid:last-child {
+    margin-right: 0;
+  }
 }
 
-@mixin span {
+@mixin span(
+    $rowWidth:"",
+    $gridMargin:"",
+    $gridUnit:""
+  ) {
   @for $i from 1 through $gridNum {
     .span#{$i} {
-      width: #{($gridOutWidth / $gridNum) * $i - $gridMargin}#{$gridUnit};
+      width: #{($rowWidth / $gridNum) * $i - $gridMargin}#{$gridUnit};
       margin-right: #{$gridMargin}#{$gridUnit};
       float: left;
     }
