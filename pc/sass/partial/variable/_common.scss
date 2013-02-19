@@ -92,7 +92,7 @@ $borderDefaultColor: #333;
 $borderWarningColor: #f00;
 $borderNoteColor:    #666;
 $borderErrorColor:   #c33;
-$borderInforColor:   #69c;
+$borderInfoColor:   #69c;
 $borderWhiteColor:   #fff;
 
 // style
@@ -100,5 +100,7 @@ $borderStyleSolid: solid;
 $borderStyleDotted: dotted;
 $borderStyleDashed: dashed;
 
-
-
+// width
+$borderDefaultWidth: 1px;
+$borderLargeWidth: 2px;
+$borderHugeWidth: 3px;

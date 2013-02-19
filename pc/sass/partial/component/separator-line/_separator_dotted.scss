@@ -1,3 +1,5 @@
 .separator_dotted {
-  
+  border-top: 1px;
+  @include borderDefaultColor;
+  @include borderDottedStyle;
 }

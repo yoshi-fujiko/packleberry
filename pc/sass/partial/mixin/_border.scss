@@ -1,0 +1,54 @@
+// border width
+@mixin borderDefaultWidth {
+  border-width: $borderDefaultWidth;
+}
+
+@mixin borderLargeWidth {
+  border-width: $borderLargeWidth;
+}
+
+@mixin borderHugeWidth {
+  border-width: $borderHugeWidth;
+}
+
+// border color
+@mixin borderDefaultColor {
+  border-color: $borderDefaultColor;
+}
+
+@mixin borderWarningColor {
+  border-color: $borderWarningColor;
+}
+
+@mixin borderWarningColor {
+  border-color: $borderWarningColor;
+}
+
+@mixin borderNoteColor {
+  border-color: $borderNoteColor;
+}
+
+@mixin borderErrorColor {
+  border-color: $borderErrorColor;
+}
+
+@mixin borderInfoColor {
+  border-color: $borderInfoColor;
+}
+
+@mixin borderWhiteColor {
+  border-color: $borderWhiteColor;
+}
+
+// border style
+@mixin borderDefaultStyle {
+  border-style: $borderStyleSolid;
+}
+
+@mixin borderDottedStyle {
+  border-style: $borderStyleDotted;
+}
+
+@mixin borderDashedStyle {
+  border-style: $borderStyleDashed;
+}
