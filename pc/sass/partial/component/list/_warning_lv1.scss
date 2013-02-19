@@ -1,7 +1,7 @@
 .list_note_lv1 {
-  margin-bottom: 5px;
   text-indent: -1em;
   padding-left: 1em;
   @include textNote;
+  @include marginBottomSmall;
   @include lastChildMarginBottom;
 }

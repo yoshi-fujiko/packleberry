@@ -11,13 +11,13 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-@include reset-box-model;
-@include reset-font;
+  @include reset-box-model;
+  @include reset-font;
 }
 // Unlike Eric's original reset, we reset the html element to be compatible
 // with the vertical rhythm mixins.
 html {
-@include reset-body;
+  @include reset-body;
 }
 ol, ul {
 &.unstyled {
@@ -25,15 +25,18 @@ ol, ul {
 }
 }
 table {
-@include reset-table;
+  @include reset-table;
 }
 caption, th, td {
-@include reset-table-cell;
+  @include reset-table-cell;
 }
 q, blockquote {
-@include reset-quotation;
+  @include reset-quotation;
 }
 a img {
-@include reset-image-anchor-border;
+  @include reset-image-anchor-border;
+}
+hr {
+  @include reset-hr;
 }
 @include reset-html5;

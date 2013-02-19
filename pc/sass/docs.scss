@@ -5,6 +5,8 @@
 @import "compass/support";
 @import "compass/utilities";
 
+
+// dummy box
 .dmy_box {
   @include border-radius();
   text-align: center;

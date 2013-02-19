@@ -1,4 +1,4 @@
 .heading1_lv2 {
-  @include textLarge();
-  @include textBold();
+  @include heading1Lv2;
+  @include textBold;
 }

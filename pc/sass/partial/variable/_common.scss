@@ -1,4 +1,43 @@
 //============================================================
+// image path
+//============================================================
+$imgPath: "../img/";
+
+
+//============================================================
+// spacing
+//============================================================
+$spacing: 10px;
+$spacingHuge: ($spacing + 10px);
+$spacingLarge: ($spacing + 5px);
+$spacingSmall: ($spacing - 5px);
+
+
+//============================================================
+// section margin
+//============================================================
+$sectionMargin: 20px;
+$sectionMarginHuge: ($sectionMargin + 10px);
+$sectionMarginLarge: ($sectionMargin + 5px);
+$sectionMarginSmall: ($sectionMargin - 5px);
+
+
+//============================================================
+// Heading
+//============================================================
+$h1DefaultSizeLv1: 39;
+$h1DefaultSizeLv2: 32;
+$h2DefaultSizeLv1: 32;
+$h2DefaultSizeLv2: 26;
+$h3DefaultSizeLv1: 26;
+$h3DefaultSizeLv2: 19;
+$h4DefaultSizeLv1: 13;
+$h5DefaultSizeLv1: 11;
+$h6DefaultSizeLv1: 11;
+$headingUnit: px;
+
+
+//============================================================
 // font
 //============================================================
 // size
@@ -27,6 +66,11 @@ $textErrorColor:   #c33;
 $textInfoColor:    #69c;
 $textWhiteColor:   #fff;
 
+// text align
+$textAlignLeft: left;
+$textAlignCenter: center;
+$textAlignRight: right;
+
 
 //============================================================
 // background
@@ -41,26 +85,20 @@ $bgWhiteColor:   #fff;
 
 
 //============================================================
-// text align
+// border
 //============================================================
-$textAlignLeft: left;
-$textAlignCenter: center;
-$textAlignRight: right;
+// color
+$borderDefaultColor: #333;
+$borderWarningColor: #f00;
+$borderNoteColor:    #666;
+$borderErrorColor:   #c33;
+$borderInforColor:   #69c;
+$borderWhiteColor:   #fff;
 
+// style
+$borderStyleSolid: solid;
+$borderStyleDotted: dotted;
+$borderStyleDashed: dashed;
 
-//============================================================
-// image path
-//============================================================
-$imgPath: "../img/";
-
-
-//============================================================
-// width
-//============================================================
-
-
-//============================================================
-// margin
-//============================================================
 
 

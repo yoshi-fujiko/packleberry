@@ -1,4 +1,4 @@
 .heading3_lv1 {
-  @include textMedium();
-  @include textBold();
+  @include heading3Lv1;
+  @include textBold;
 }

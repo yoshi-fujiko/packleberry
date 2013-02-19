@@ -1,5 +1,5 @@
 .list_normal_lv1 {
-  margin-bottom: 5px;
   @include textMedium;
+  @include marginBottomSmall;
   @include lastChildMarginBottom;
 }
