@@ -1,0 +1,66 @@
+//============================================================
+// font
+//============================================================
+// size
+$textDefaultSize: 13;
+$textHugeSize: ($textDefaultSize + 4);
+$textLargeSize: ($textDefaultSize + 2);
+$textMediumSize: $textDefaultSize;
+$textSmallSize: ($textDefaultSize - 2);
+$textUnit: px;
+
+// weight
+$textNoramlWeight: normal;
+$textBoldWeight: bold;
+
+// family
+$textFontFamily: Verdana,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+
+// line-heihgt
+$textLineHeight: $textDefaultSize * 0.1;
+
+// color
+$textDefaultColor: #333;
+$textWarningColor: #f00;
+$textNoteColor:    #666;
+$textErrorColor:   #c33;
+$textInfoColor:    #69c;
+$textWhiteColor:   #fff;
+
+
+//============================================================
+// background
+//============================================================
+// color
+$bgDefaultColor: #fff;
+$bgWarningColor: #f00;
+$bgNoteColor:    #666;
+$bgErrorColor:   #c33;
+$bgInfoColor:    #69c;
+$bgWhiteColor:   #fff;
+
+
+//============================================================
+// text align
+//============================================================
+$textAlignLeft: left;
+$textAlignCenter: center;
+$textAlignRight: right;
+
+
+//============================================================
+// image path
+//============================================================
+$imgPath: "../img/";
+
+
+//============================================================
+// width
+//============================================================
+
+
+//============================================================
+// margin
+//============================================================
+
+

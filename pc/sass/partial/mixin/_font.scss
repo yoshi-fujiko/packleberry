@@ -32,5 +32,28 @@
 }
 
 @mixin textBold {
-  font-weight: $textBoldWeight
+  font-weight: $textBoldWeight;
+}
+
+//============================================================
+// color
+//============================================================
+@mixin textWarning {
+  color: $textWarningColor;
+}
+
+@mixin textNote {
+  color: $textNoteColor;
+}
+
+@mixin textError {
+  color: $textErrorColor;
+}
+
+@mixin textInfo {
+  color: $textInfoColor;
+}
+
+@mixin textWhite {
+  color: $textWhiteColor;
 }

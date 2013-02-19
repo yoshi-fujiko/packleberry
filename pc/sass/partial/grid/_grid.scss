@@ -5,13 +5,10 @@
     $gridMargin:$gridDefaultMargin,
     $gridUnit:$gridDefaultUnit
 	) {
-  width: #{($rowWidth + $gridMargin)}#{$gridUnit};
+  width: #{$rowWidth}#{$gridUnit};
   margin: #{$rowMargnTop} auto #{$rowMargnBottom};
   @include legacy-pie-clearfix();
   @include span($rowWidth, $gridMargin, $gridUnit);
-  .grid:last-child {
-    margin-right: 0;
-  }
 }
 
 @mixin span(
@@ -21,9 +18,10 @@
   ) {
   @for $i from 1 through $gridNum {
     .span#{$i} {
-      width: #{($rowWidth / $gridNum) * $i - $gridMargin}#{$gridUnit};
+      width: #{(($rowWidth + $gridMargin) / $gridNum) * $i - $gridMargin}#{$gridUnit};
       margin-right: #{$gridMargin}#{$gridUnit};
       float: left;
+      @include lastChildMarginRight;
     }
   }
 }
