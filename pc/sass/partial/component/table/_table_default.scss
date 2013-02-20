@@ -1,0 +1,65 @@
+.table {
+  width: 100%;
+  @include borderDefault(1px, 0, 0, 1px);
+  th, td {
+    @include borderDefault(0, 1px, 1px, 0);
+    @include padding(8px, 4px, 8px, 4px);
+  }
+}
+
+.table_horizon {
+  width: 100%;
+  th, td {
+    @include borderDefault(0, 0, 1px, 0);
+    @include padding(8px, 4px, 8px, 4px);
+  }
+  tr:last-child th,
+  tr:last-child td {
+    @include borderDefault(0, 0, 0, 0);
+  }
+}
+
+.table_vertical {
+  width: 100%;
+  th, td {
+    @include borderDefault(0, 1px, 0, 0);
+    @include padding(8px, 4px, 8px, 4px);
+    &:last-child {
+      @include borderDefault(0, 0, 0, 0);
+    }
+  }
+}
+
+tr.striped td {
+  background-color: $tableStripedColor;
+}
+
+tr.cell_warning td,
+th.cell_warning,
+td.cell_warning {
+  @include bgWarning;
+}
+
+tr.cell_note td,
+th.cell_note,
+td.cell_note {
+  @include bgNote;
+}
+
+tr.cell_error td,
+th.cell_error,
+td.cell_error {
+  @include bgError;
+}
+
+tr.cell_info td,
+th.cell_info,
+td.cell_info {
+  @include bgInfo;
+}
+
+tr.cell_white td,
+th.cell_white,
+td.cell_white {
+  @include bgWhite;
+}

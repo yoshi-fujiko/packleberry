@@ -1,54 +1,55 @@
-// border width
-@mixin borderDefaultWidth {
-  border-width: $borderDefaultWidth;
+// border solid
+@mixin borderDefault (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderDefaultColor $type;
+    border-width: $top $right $bottom $left;
 }
 
-@mixin borderLargeWidth {
-  border-width: $borderLargeWidth;
+@mixin borderWarning (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderDefaultColor $type;
+    border-width: $top $right $bottom $left;
 }
 
-@mixin borderHugeWidth {
-  border-width: $borderHugeWidth;
+@mixin borderNote (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderDefaultColor $type;
+    border-width: $top $right $bottom $left;
 }
 
-// border color
-@mixin borderDefaultColor {
-  border-color: $borderDefaultColor;
+@mixin borderError (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderDefaultColor $type;
+    border-width: $top $right $bottom $left;
 }
 
-@mixin borderWarningColor {
-  border-color: $borderWarningColor;
-}
-
-@mixin borderWarningColor {
-  border-color: $borderWarningColor;
-}
-
-@mixin borderNoteColor {
-  border-color: $borderNoteColor;
-}
-
-@mixin borderErrorColor {
-  border-color: $borderErrorColor;
-}
-
-@mixin borderInfoColor {
-  border-color: $borderInfoColor;
-}
-
-@mixin borderWhiteColor {
-  border-color: $borderWhiteColor;
-}
-
-// border style
-@mixin borderDefaultStyle {
-  border-style: $borderStyleSolid;
-}
-
-@mixin borderDottedStyle {
-  border-style: $borderStyleDotted;
-}
-
-@mixin borderDashedStyle {
-  border-style: $borderStyleDashed;
+@mixin borderInfo (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderDefaultColor $type;
+    border-width: $top $right $bottom $left;
 }

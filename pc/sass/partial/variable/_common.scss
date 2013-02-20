@@ -23,6 +23,15 @@ $sectionMarginSmall: ($sectionMargin - 5px);
 
 
 //============================================================
+// padding
+//============================================================
+$padding: 10px;
+$paddingHuge: ($padding + 10px);
+$paddingLarge: ($padding + 5px);
+$paddingSmall: ($padding - 5px);
+
+
+//============================================================
 // Heading
 //============================================================
 $h1DefaultSizeLv1: 39;
@@ -104,3 +113,9 @@ $borderStyleDashed: dashed;
 $borderDefaultWidth: 1px;
 $borderLargeWidth: 2px;
 $borderHugeWidth: 3px;
+
+
+//============================================================
+// table
+//============================================================
+$tableStripedColor: #ddd;

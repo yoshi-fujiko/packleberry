@@ -285,6 +285,92 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: right;
 }
 
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+.table {
+  width: 100%;
+  border: #333333 solid;
+  border-width: 1px 0 0 1px;
+}
+/* line 4, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+.table th, .table td {
+  border: #333333 solid;
+  border-width: 0 1px 1px 0;
+  padding: 8px 4px 8px 4px;
+}
+
+/* line 10, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+.table_horizon {
+  width: 100%;
+}
+/* line 12, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+.table_horizon th, .table_horizon td {
+  border: #333333 solid;
+  border-width: 0 0 1px 0;
+  padding: 8px 4px 8px 4px;
+}
+/* line 17, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+.table_horizon tr:last-child th,
+.table_horizon tr:last-child td {
+  border: #333333 solid;
+  border-width: 0 0 0 0;
+}
+
+/* line 22, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+.table_vertical {
+  width: 100%;
+}
+/* line 24, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+.table_vertical th, .table_vertical td {
+  border: #333333 solid;
+  border-width: 0 1px 0 0;
+  padding: 8px 4px 8px 4px;
+}
+/* line 27, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+.table_vertical th:last-child, .table_vertical td:last-child {
+  border: #333333 solid;
+  border-width: 0 0 0 0;
+}
+
+/* line 33, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+tr.striped td {
+  background-color: #dddddd;
+}
+
+/* line 39, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+tr.cell_warning td,
+th.cell_warning,
+td.cell_warning {
+  background-color: red;
+}
+
+/* line 45, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+tr.cell_note td,
+th.cell_note,
+td.cell_note {
+  background-color: #666666;
+}
+
+/* line 51, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+tr.cell_error td,
+th.cell_error,
+td.cell_error {
+  background-color: #cc3333;
+}
+
+/* line 57, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+tr.cell_info td,
+th.cell_info,
+td.cell_info {
+  background-color: #6699cc;
+}
+
+/* line 63, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/table/_table_default.scss */
+tr.cell_white td,
+th.cell_white,
+td.cell_white {
+  background-color: white;
+}
+
 /* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/list/_normal_lv1.scss */
 .list_normal_lv1 {
   font-size: 13px;
@@ -355,11 +441,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-bottom: 0;
 }
 
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/separator-line/_separator_solid.scss */
+.separator_solid {
+  border: #333333 solid;
+  border-width: 1px 0 0 0;
+}
+
 /* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/separator-line/_separator_dotted.scss */
 .separator_dotted {
-  border-top: 1px;
-  border-color: #333333;
-  border-style: dotted;
+  border: #333333 dotted;
+  border-width: 1px 0 0 0;
+}
+
+/* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/separator-line/_separator_dashed.scss */
+.separator_dashed {
+  border: #333333 dashed;
+  border-width: 1px 0 0 0;
 }
 
 /* line 17, ../sass/base.scss */

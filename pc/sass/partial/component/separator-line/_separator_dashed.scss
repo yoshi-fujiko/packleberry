@@ -1,0 +1,3 @@
+.separator_dashed {
+  @include borderDefault(1px, 0, 0, 0, dashed);
+}
