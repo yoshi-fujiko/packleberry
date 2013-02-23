@@ -38,6 +38,10 @@
 //============================================================
 // color
 //============================================================
+@mixin textDefault {
+	color: $textDefaultColor;
+}
+
 @mixin textWarning {
   color: $textWarningColor;
 }

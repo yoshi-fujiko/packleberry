@@ -1,0 +1,23 @@
+.clrDefault {
+	@include textNormal;
+}
+
+.clrWarning {
+	@include textWarning;
+}
+
+.clrNote {
+	@include textNote;
+}
+
+.clrError {
+	@include textError;
+}
+
+.clrInfo {
+	@include textInfo;
+}
+
+.clrWhite {
+	@include textWhite;
+}
