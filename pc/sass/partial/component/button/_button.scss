@@ -1,0 +1,11 @@
+.btn {
+	@include textBold;
+	@include border-radius();
+	@include background-image(linear-gradient(top, #fff 0%, #eee 100%));
+	@include inline-block();
+	@include borderDefault();
+	@include textAlignCenter;
+	border-color: #ccc;
+	border-top-color: #ddd;
+	padding: 5px 10px;
+}

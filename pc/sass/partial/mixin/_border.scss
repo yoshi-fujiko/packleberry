@@ -17,7 +17,7 @@
     $left:$borderDefaultWidth,
     $type:$borderStyleSolid
   ) {
-    border: $borderDefaultColor $type;
+    border: $borderWarningColor $type;
     border-width: $top $right $bottom $left;
 }
 
@@ -28,7 +28,7 @@
     $left:$borderDefaultWidth,
     $type:$borderStyleSolid
   ) {
-    border: $borderDefaultColor $type;
+    border: $borderNoteColor $type;
     border-width: $top $right $bottom $left;
 }
 
@@ -39,7 +39,7 @@
     $left:$borderDefaultWidth,
     $type:$borderStyleSolid
   ) {
-    border: $borderDefaultColor $type;
+    border: $borderErrorColor $type;
     border-width: $top $right $bottom $left;
 }
 
@@ -50,6 +50,6 @@
     $left:$borderDefaultWidth,
     $type:$borderStyleSolid
   ) {
-    border: $borderDefaultColor $type;
+    border: $borderInfoColor $type;
     border-width: $top $right $bottom $left;
 }

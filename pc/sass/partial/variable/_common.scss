@@ -73,6 +73,7 @@ $textWarningColor: #f00;
 $textNoteColor:    #666;
 $textErrorColor:   #c33;
 $textInfoColor:    #69c;
+$textDisableColor: #ccc;
 $textWhiteColor:   #fff;
 
 // text align
@@ -90,6 +91,7 @@ $bgWarningColor: #f00;
 $bgNoteColor:    #666;
 $bgErrorColor:   #c33;
 $bgInfoColor:    #69c;
+$bgDisableColor: #eee;
 $bgWhiteColor:   #fff;
 
 
@@ -119,3 +121,17 @@ $borderHugeWidth: 3px;
 // table
 //============================================================
 $tableStripedColor: #ddd;
+
+//============================================================
+// width [button]
+//============================================================
+$btnWidth: 100;
+$btnWidthHuge: $btnWidth * 2;
+$btnWidthLarge: $btnWidth * 1.5;
+$btnWidthMedium: $btnWidth;
+$btnWidthSmall: $btnWidth / 2;
+$btnWidthUnit: px;
+
+//============================================================
+// width [form]
+//============================================================

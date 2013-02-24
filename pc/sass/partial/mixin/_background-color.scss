@@ -18,6 +18,10 @@
   background-color: $bgInfoColor;
 }
 
+@mixin bgDisable {
+  background-color: $bgDisableColor;
+}
+
 @mixin bgWhite {
   background-color: $bgWhiteColor;
 }

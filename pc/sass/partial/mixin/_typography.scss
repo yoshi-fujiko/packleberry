@@ -58,6 +58,10 @@
   color: $textInfoColor;
 }
 
+@mixin textDisable {
+  color: $textDisableColor;
+}
+
 @mixin textWhite {
   color: $textWhiteColor;
 }
