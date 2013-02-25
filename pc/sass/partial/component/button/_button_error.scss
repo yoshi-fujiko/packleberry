@@ -1,5 +1,0 @@
-.btn_error {
-	@include textWhite;
-	@include background-image(linear-gradient(top, #ee5f5b 0%, $bgErrorColor 100%));
-	@include borderError();
-}

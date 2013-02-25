@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <title>SPRINGBOARD</title>
   <meta name="description" content="SPRINGBOARD: html base template">
   <meta name="keywords" content="SPRINGBOARD, sass, compass">
-  <title>SPRINGBOARD: html base template</title>
   <script src="./js/dev.js"></script>
-  <script>
+  <script type="text/javascript">
 // 以下css
   (function(){
     DEV.changeStylesheet({
@@ -19,77 +19,108 @@
 </head>
 <body>
 
-<div class="wrapper column1">
-  <div class="container">
+<div class="docs_container">
 
+  <header class="header">
     <h1 class="heading1_lv1">SPRINGBORAD verβ</h1>
-    <section class="dmy_index_section">
-      <h1 class="heading1_lv2">HTML base file</h1>
-      <p class="sentence dmy_index_lead">SPRINGBORADを使用するためのベースとなるHTMLファイル</p>
-      <ul>
-        <li><a href="kit/base.html">base html</a></li>
-      </ul>
-    </section>
-    
-    <hr class="separator_solid">
+  </header>
 
-    <section class="dmy_index_section">
-      <h1 class="heading1_lv2">layout outline</h1>
-      <p class="sentence dmy_index_lead">ヘッダー・フッター・1〜3カラム<br>
-        左・中央・右カラムの幅、マージンは要件により変更可能</p>
-      <ul>
-        <li><a href="kit/header.html">header</a></li>
-        <li><a href="kit/footer.html">footer</a></li>
-        <li><a href="kit/column.html">column</a></li>
-      </ul>
-    </section>
-    
-    <hr class="separator_solid">
-    
-    <section class="dmy_index_section">
-      <h1 class="heading1_lv2">grid</h1>
-      <p class="sentence dmy_index_lead">最大12分割のグリッドシステム</p>
-      <ul>
-        <li><a href="kit/grid.html">grid</a></li>
-      </ul>
-    </section>
-    
-    <hr class="separator_solid">
-    
-    <section class="dmy_index_section">
-      <h1 class="heading1_lv2">compornent</h1>
-      <p class="sentence dmy_index_lead">ベースコンポーネント</p>
-      <ul>
-        <li><a href="">Heading</a></li>
-        <li><a href="">sentence</a></li>
-        <li><a href="">table</a></li>
-        <li><a href="">form</a></li>
-        <li><a href="">button</a></li>
-        <li><a href="">list</a></li>
-        <li><a href="">image float</a></li>
-        <li><a href="">separator</a></li>
-      </ul>
-    </section>
-    
-    <hr class="separator_solid">
-    
-    <section class="dmy_index_section">
-      <h1 class="heading1_lv2">skin</h1>
-      <p class="sentence dmy_index_lead">外観を装飾するスキン。<br>
-        classに設定することを前提としているが、、、、。
-      </p>
-      <ul>
-        <li><a href="">color</a></li>
-        <li><a href="">font</a></li>
-        <li><a href="">border</a></li>
-        <li><a href="">margin</a></li>
-        <li><a href="">padding</a></li>
-        <li><a href="">size</a></li>
-      </ul>
-    </section>
+  <div class="wrapper column1">
 
-  </div><!-- {./container} -->
-</div><!-- {./wrapper} -->
+    <!--base html-->
+    <section class="row_liquid">
+      <div class="span4">
+        <h1 class="heading2_lv2">HTML base file</h1>
+      </div>
+      <div class="span8">
+        <p class="sentence txt_normal_lv3">SPRINGBORADを使用するためのベースHTMLファイル</p>
+        <ul>
+          <li><a href="kit/base.html">base html</a></li>
+        </ul>
+      </div>
+    </section>
+    <!--/base html-->
+
+    <hr class="separator_dashed">
+
+    <!--layout outline-->
+    <section class="row_liquid">
+      <div class="span4">
+        <h1 class="heading2_lv2">layout outline</h1>
+      </div>
+      <div class="span8">
+        <p class="sentence txt_normal_lv3">ヘッダー・フッター・1〜3カラム<br>
+          左・中央・右カラムの幅、マージンは要件により変更可能</p>
+        <ul>
+          <li><a href="kit/header.html">header</a></li>
+          <li><a href="kit/footer.html">footer</a></li>
+          <li><a href="kit/column.html">column</a></li>
+        </ul>
+      </div>
+    </section>
+    <!--/layout outline-->
+
+    <hr class="separator_dashed">
+
+    <!--grid-->
+    <section class="row_liquid">
+      <div class="span4">
+        <h1 class="heading2_lv2">grid</h1>
+      </div>
+      <div class="span8">
+        <p class="sentence txt_normal_lv3">12分割のグリッドシステム</p>
+        <ul>
+          <li><a href="kit/grid.html">grid</a></li>
+        </ul>
+      </div>
+    </section>
+    <!--/grid-->
+
+    <hr class="separator_dashed">
+
+    <!--compornent-->
+    <section class="row_liquid">
+      <div class="span4">
+        <h1 class="heading2_lv2">compornent</h1>
+      </div>
+      <div class="span8">
+        <p class="sentence txt_normal_lv3">コンポーネント集</p>
+        <ul>
+          <li><a href="">Heading</a></li>
+          <li><a href="">sentence</a></li>
+          <li><a href="">table</a></li>
+          <li><a href="">form</a></li>
+          <li><a href="">button</a></li>
+          <li><a href="">list</a></li>
+          <li><a href="">image float</a></li>
+          <li><a href="">separator</a></li>
+        </ul>
+      </div>
+    </section>
+    <!--/compornent-->
+
+    <hr class="separator_dashed">
+
+    <!--skin-->
+    <section class="row_liquid">
+      <div class="span4">
+        <h1 class="heading2_lv2">skin</h1>
+      </div>
+      <div class="span8">
+        <p class="sentence txt_normal_lv3">スキン集</p>
+        <ul>
+          <li><a href="">color</a></li>
+          <li><a href="">margin</a></li>
+        </ul>
+      </div>
+    </section>
+    <!--/skin-->
+
+  </div>
+  
+  <footer></footer>
+
+</div>
 
 </body>
 </html>

@@ -1,4 +1,0 @@
-.btn_disable {
-	@include textDisable;
-	@include background-image(linear-gradient(top, #fff 0%, $bgDisableColor 100%));
-}

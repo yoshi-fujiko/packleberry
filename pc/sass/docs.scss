@@ -5,6 +5,11 @@
 @import "compass/support";
 @import "compass/utilities";
 
+// docs container
+.docs_container {
+  width: 980px;
+  margin: auto;
+}
 
 // dummy box
 .dmy_box {
@@ -12,14 +17,6 @@
   text-align: center;
   padding: 5px;
   background: #6cf;
-}
-
-.dmy_index_section {
-  margin: 40px 0;
-}
-
-.dmy_index_lead {
-  margin: 10px 0;
 }
 
 .dmy_h100 {

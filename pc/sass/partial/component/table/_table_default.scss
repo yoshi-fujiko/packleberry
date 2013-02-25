@@ -1,8 +1,0 @@
-.table {
-  width: 100%;
-  @include borderDefault(1px, 0, 0, 1px);
-  th, td {
-    @include borderDefault(0, 1px, 1px, 0);
-    @include padding(8px, 4px, 8px, 4px);
-  }
-}
