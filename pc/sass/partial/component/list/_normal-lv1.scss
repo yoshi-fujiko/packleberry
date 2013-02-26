@@ -1,0 +1,5 @@
+.list_normal_lv1 {
+  @include textMedium;
+  @include marginBottomSmall;
+  @include lastChildMarginBottom;
+}

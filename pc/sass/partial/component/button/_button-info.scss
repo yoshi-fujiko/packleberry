@@ -1,0 +1,5 @@
+.btn_info {
+	@include textWhite;
+	@include background-image(linear-gradient(top, #08c 0%, $bgInfoColor 100%));
+	@include borderInfo();
+}
