@@ -1,8 +1,7 @@
-@mixin padding(
-    $top:$padding,
-    $right:$padding,
-    $bottom:$padding,
-    $left:$padding
-  ) {
-    padding: $top $right $bottom $left;
+@mixin paddingDefault {
+    padding: $padding;
+}
+
+@mixin paddingSmall {
+    padding: $paddingSmall;
 }

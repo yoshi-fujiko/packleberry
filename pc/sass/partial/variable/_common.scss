@@ -104,6 +104,7 @@ $borderWarningColor: #f00;
 $borderNoteColor:    #666;
 $borderErrorColor:   #c33;
 $borderInfoColor:    #69c;
+$borderDisableColor: #ccc;
 $borderWhiteColor:   #fff;
 
 // style
@@ -137,3 +138,9 @@ $btnWidthUnit: px;
 // form
 //============================================================
 // width
+$inputWidth: 100;
+$inputWidthHuge: $inputWidth * 2;
+$inputWidthLarge: $inputWidth * 1.5;
+$inputWidthMedium: $inputWidth;
+$inputWidthSmall: $inputWidth / 2;
+$inputWidthUnit: px;

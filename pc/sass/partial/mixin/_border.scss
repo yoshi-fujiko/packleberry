@@ -53,3 +53,14 @@
     border: $borderInfoColor $type;
     border-width: $top $right $bottom $left;
 }
+
+@mixin borderDisable (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderDisableColor $type;
+    border-width: $top $right $bottom $left;
+}
