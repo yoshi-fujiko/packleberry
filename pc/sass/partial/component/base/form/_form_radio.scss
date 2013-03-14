@@ -1,0 +1,10 @@
+$radioIndent: 25px;
+.form_radio {
+  cursor: pointer;
+  padding-left: $radioIndent;
+  @include inline-block();
+  input {
+    margin-right: 5px;
+    margin-left: -#{$radioIndent};
+  }
+}

@@ -1,0 +1,9 @@
+.form_search {
+  .form_text {
+    @include border-radius(5px 0 0 5px);
+  }
+  .btn {
+    margin-left: -1px;
+    @include border-radius(0 5px 5px 0);
+  }
+}

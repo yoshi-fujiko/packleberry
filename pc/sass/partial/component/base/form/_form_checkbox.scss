@@ -1,0 +1,10 @@
+$checkIndent: 25px;
+.form_checkbox {
+  cursor: pointer;
+  padding-left: $checkIndent;
+  @include inline-block();
+  input {
+    margin-right: 5px;
+    margin-left: -#{$checkIndent};
+  }
+}

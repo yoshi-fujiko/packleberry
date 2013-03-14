@@ -8,7 +8,7 @@ $imgPath: "../img/";
 // spacing
 //============================================================
 $spacing: 10px;
-$spacingHuge: ($spacing + 10px);
+$spacingHuge:  ($spacing + 10px);
 $spacingLarge: ($spacing + 5px);
 $spacingSmall: ($spacing - 5px);
 
@@ -17,7 +17,7 @@ $spacingSmall: ($spacing - 5px);
 // section margin
 //============================================================
 $sectionMargin: 20px;
-$sectionMarginHuge: ($sectionMargin + 10px);
+$sectionMarginHuge:  ($sectionMargin + 10px);
 $sectionMarginLarge: ($sectionMargin + 5px);
 $sectionMarginSmall: ($sectionMargin - 5px);
 
@@ -26,7 +26,7 @@ $sectionMarginSmall: ($sectionMargin - 5px);
 // padding
 //============================================================
 $padding: 10px;
-$paddingHuge: ($padding + 10px);
+$paddingHuge:  ($padding + 10px);
 $paddingLarge: ($padding + 5px);
 $paddingSmall: ($padding - 5px);
 
@@ -59,7 +59,7 @@ $textUnit: px;
 
 // weight
 $textNoramlWeight: normal;
-$textBoldWeight: bold;
+$textBoldWeight:   bold;
 
 // family
 $textFontFamily: Verdana,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
@@ -77,9 +77,9 @@ $textDisableColor: #ccc;
 $textWhiteColor:   #fff;
 
 // text align
-$textAlignLeft: left;
+$textAlignLeft:   left;
 $textAlignCenter: center;
-$textAlignRight: right;
+$textAlignRight:  right;
 
 
 //============================================================
@@ -108,14 +108,14 @@ $borderDisableColor: #ccc;
 $borderWhiteColor:   #fff;
 
 // style
-$borderStyleSolid: solid;
+$borderStyleSolid:  solid;
 $borderStyleDotted: dotted;
 $borderStyleDashed: dashed;
 
 // width
 $borderDefaultWidth: 1px;
-$borderLargeWidth: 2px;
-$borderHugeWidth: 3px;
+$borderLargeWidth:   2px;
+$borderHugeWidth:    3px;
 
 
 //============================================================
@@ -128,19 +128,22 @@ $tableStripedColor: #ddd;
 //============================================================
 // width
 $btnWidth: 100;
-$btnWidthHuge: $btnWidth * 2;
-$btnWidthLarge: $btnWidth * 1.5;
+$btnWidthHuge:   $btnWidth * 2;
+$btnWidthLarge:  $btnWidth * 1.5;
 $btnWidthMedium: $btnWidth;
-$btnWidthSmall: $btnWidth / 2;
+$btnWidthSmall:  $btnWidth / 2;
 $btnWidthUnit: px;
 
 //============================================================
 // form
 //============================================================
 // width
-$inputWidth: 100;
-$inputWidthHuge: $inputWidth * 2;
-$inputWidthLarge: $inputWidth * 1.5;
-$inputWidthMedium: $inputWidth;
-$inputWidthSmall: $inputWidth / 2;
-$inputWidthUnit: px;
+$formWidthName:     100;
+$formWidthEmail:    200;
+$formWidthTell1:    200;
+$formWidthTell3:    50;
+$formWidthZip:      50;
+$formWidthAddress:  200;
+$formWidthPassword: 100;
+$formWidthSearch:   100;
+$formWidthUnit: px;
