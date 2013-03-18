@@ -5,24 +5,5 @@
 @import "compass/support";
 @import "compass/utilities";
 
-// docs container
-.docs_container {
-  width: 980px;
-  margin: auto;
-}
-
-// dummy box
-.dmy_box {
-  @include border-radius();
-  text-align: center;
-  padding: 5px;
-  background: #6cf;
-}
-
-.dmy_h100 {
-  height: 100px;
-}
-
-.dmy_h50 {
-  height: 50px;
-}
+// docs
+@import "partial/component/extension/docs/docs"

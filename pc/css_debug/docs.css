@@ -1,11 +1,39 @@
 @charset "utf-8";
-/* line 9, ../sass/docs.scss */
+/* line 2, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 .docs_container {
-  width: 980px;
+  width: 960px;
   margin: auto;
 }
 
-/* line 15, ../sass/docs.scss */
+/* line 8, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_top_gate {
+  border: solid 1px #fce0eb;
+  min-height: 120px;
+  -webkit-box-shadow: #fdf2f6 0 1px 2px inset;
+  -moz-box-shadow: #fdf2f6 0 1px 2px inset;
+  box-shadow: #fdf2f6 0 1px 2px inset;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #ffffff), color-stop(100%, #fce0eb));
+  background-image: -webkit-linear-gradient(#ffffff 50%, #fce0eb 100%);
+  background-image: -moz-linear-gradient(#ffffff 50%, #fce0eb 100%);
+  background-image: -o-linear-gradient(#ffffff 50%, #fce0eb 100%);
+  background-image: linear-gradient(#ffffff 50%, #fce0eb 100%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_top_gate .heading2_lv2 {
+  color: #f69;
+  padding: 5px 10px;
+}
+/* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_top_gate .txt_sentence {
+  padding: 5px 10px;
+}
+
+/* line 24, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 .dmy_box {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -17,12 +45,12 @@
   background: #6cf;
 }
 
-/* line 22, ../sass/docs.scss */
+/* line 31, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 .dmy_h100 {
   height: 100px;
 }
 
-/* line 26, ../sass/docs.scss */
+/* line 35, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 .dmy_h50 {
   height: 50px;
 }

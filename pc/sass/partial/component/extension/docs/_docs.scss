@@ -1,0 +1,37 @@
+// docs container
+.docs_container {
+  width: 960px;
+  margin: auto;
+}
+
+// top
+.docs_top_gate {
+  border: solid 1px #fce0eb;
+  min-height: 120px;
+  @include box-shadow(#fdf2f6 0 1px 2px inset);
+  @include background-image(linear-gradient(#fff 50%, #fce0eb 100%));
+  @include border-radius();
+  .heading2_lv2 {
+    color: #f69;
+    padding: 5px 10px;
+  }
+  .txt_sentence {
+    padding: 5px 10px;
+  }
+}
+
+// dummy box
+.dmy_box {
+  @include border-radius();
+  text-align: center;
+  padding: 5px;
+  background: #6cf;
+}
+
+.dmy_h100 {
+  height: 100px;
+}
+
+.dmy_h50 {
+  height: 50px;
+}
