@@ -1,3 +1,7 @@
+$docsBorderColor: #dedede;
+$docsTextColor: #333;
+$docsPointColor: #f69;
+
 // docs container
 .docs_container {
   width: 960px;
@@ -17,6 +21,102 @@
   }
   .txt_sentence {
     padding: 5px 10px;
+  }
+}
+
+// example
+#docs_section {
+  .docs_heading1 {
+    border-bottom: 1px solid $docsBorderColor;
+    padding-bottom: 10px;
+  }
+  
+  .docs_heading2 {
+    margin: 20px 0 10px;
+  }
+  
+  .txt_sentence {
+    margin-bottom: 10px;
+  }
+  
+  .example {
+    border:1px solid $docsBorderColor;
+    border-bottom: 0;
+    padding: 30px 10px;
+    position: relative;
+    @include border-radius(5px 5px 0 0);
+    &:after {
+      content: "example";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #aaa;
+      display: block;
+      padding: 3px 5px;
+      background: #ececec;
+      border: solid $docsBorderColor;
+      border-width: 0 1px 1px 0;
+      @include border-radius(0 0 5px 0);
+    }
+  }
+}
+
+
+// header
+.docs_header {
+  height: 110px;
+  position: relative;
+  z-index: 100;
+  .docs_hgroup {
+    background: #fff;
+    width: 960px;
+    position: fixed;
+  }
+}
+
+// docs_nav
+.docs_nav {
+  // global
+  .global_nav {
+    border: solid 1px $docsBorderColor;
+    @include border-radius(20px);
+    @include background-image(linear-gradient(#fff 50%, #fce0eb 100%));
+    li {
+      width: #{floor(954/5)}px;
+      @include inline-block();
+      border-right: solid 1px $docsBorderColor;
+      &:last-child {
+        border-right: none; 
+      }
+      a {
+        color: #333;
+        padding: 5px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+  // local
+  .local_nav {
+    width: 250px;
+    position: fixed;
+    border: solid 1px $docsBorderColor;
+    @include border-radius(10px);
+    li {
+      border-bottom: solid 1px $docsBorderColor;
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        display: block;
+        padding: 10px 15px 8px 15px;
+        font-weight: bold;
+        color: $docsPointColor;
+        text-decoration: none;
+      }
+    }
   }
 }
 
