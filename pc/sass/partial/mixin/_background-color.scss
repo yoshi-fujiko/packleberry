@@ -7,7 +7,7 @@
 }
 
 @mixin bgNote {
-  background-color: $bgNoteColor;
+  background-color: $bgNotesColor;
 }
 
 @mixin bgError {
@@ -19,7 +19,7 @@
 }
 
 @mixin bgDisable {
-  background-color: $bgDisableColor;
+  background-color: $bgDisabledColor;
 }
 
 @mixin bgWhite {

@@ -40,17 +40,17 @@
 }
 /* line 34, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 #docs_section .docs_heading2 {
-  margin: 20px 0 10px;
+  margin: 35px 0 10px;
 }
 /* line 38, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
-#docs_section .txt_sentence {
+#docs_section .docs_explan {
   margin-bottom: 10px;
 }
 /* line 42, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 #docs_section .example {
   border: 1px solid #dedede;
   border-bottom: 0;
-  padding: 30px 10px;
+  padding: 40px 10px 15px 10px;
   position: relative;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -130,7 +130,7 @@
 }
 /* line 102, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 .docs_nav .local_nav {
-  width: 250px;
+  width: 200px;
   position: fixed;
   border: solid 1px #dedede;
   -webkit-border-radius: 10px;
@@ -157,6 +157,85 @@
 }
 
 /* line 124, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property {
+  width: 50%;
+  min-height: 19px;
+  padding: 5px 10px;
+}
+/* line 129, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.normal_text {
+  color: #333333;
+}
+/* line 130, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.normal_bg {
+  background: white;
+}
+/* line 131, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.normal_border {
+  border: solid 1px #333333;
+}
+/* line 133, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.error_text {
+  color: #cc3333;
+}
+/* line 134, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.error_bg {
+  background: #cc3333;
+}
+/* line 135, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.error_border {
+  border: solid 1px #cc3333;
+}
+/* line 137, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.warning_text {
+  color: red;
+}
+/* line 138, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.warning_bg {
+  background: red;
+}
+/* line 139, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.warning_border {
+  border: solid 1px red;
+}
+/* line 141, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.info_text {
+  color: #6699cc;
+}
+/* line 142, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.info_bg {
+  background: #6699cc;
+}
+/* line 143, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.info_border {
+  border: solid 1px #6699cc;
+}
+/* line 145, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.notes_text {
+  color: #666666;
+}
+/* line 146, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.notes_bg {
+  background: #dddddd;
+}
+/* line 147, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.notes_border {
+  border: solid 1px #666666;
+}
+/* line 149, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.disabled_text {
+  color: #cccccc;
+}
+/* line 150, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.disabled_bg {
+  background: #eeeeee;
+}
+/* line 151, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.disabled_border {
+  border: solid 1px #cccccc;
+}
+
+/* line 155, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 .dmy_box {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -168,12 +247,7 @@
   background: #6cf;
 }
 
-/* line 131, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
+/* line 162, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
 .dmy_h100 {
   height: 100px;
-}
-
-/* line 135, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/extension/docs/_docs.scss */
-.dmy_h50 {
-  height: 50px;
 }

@@ -1,5 +1,5 @@
-.list_normal_lv2 {
-  @include textSmall;
+.list_indent > li {
+  @include indent;
   @include marginBottomSmall;
   @include lastChildMarginBottom;
 }

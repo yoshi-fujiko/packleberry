@@ -32,17 +32,17 @@ $docsPointColor: #f69;
   }
   
   .docs_heading2 {
-    margin: 20px 0 10px;
+    margin: 35px 0 10px;
   }
   
-  .txt_sentence {
+  .docs_explan {
     margin-bottom: 10px;
   }
   
   .example {
     border:1px solid $docsBorderColor;
     border-bottom: 0;
-    padding: 30px 10px;
+    padding: 40px 10px 15px 10px;
     position: relative;
     @include border-radius(5px 5px 0 0);
     &:after {
@@ -100,7 +100,7 @@ $docsPointColor: #f69;
   }
   // local
   .local_nav {
-    width: 250px;
+    width: 200px;
     position: fixed;
     border: solid 1px $docsBorderColor;
     @include border-radius(10px);
@@ -120,6 +120,37 @@ $docsPointColor: #f69;
   }
 }
 
+// property
+.docs_property {
+  width: 50%;
+  min-height: #{$textDefaultSize + 5}#{px};
+  padding: 5px 10px;
+  // normal
+  &.normal_text { color: $textDefaultColor; }
+  &.normal_bg { background: $bgDefaultColor; }
+  &.normal_border { border: solid 1px $borderDefaultColor; }
+  // error
+  &.error_text { color: $textErrorColor; }
+  &.error_bg { background: $bgErrorColor; }
+  &.error_border { border: solid 1px $borderErrorColor; }
+  // warning
+  &.warning_text { color: $textWarningColor; }
+  &.warning_bg { background: $bgWarningColor; }
+  &.warning_border { border: solid 1px $borderWarningColor; }
+  // info
+  &.info_text { color: $textInfoColor; }
+  &.info_bg { background: $bgInfoColor; }
+  &.info_border { border: solid 1px $borderInfoColor; }
+  // notes
+  &.notes_text { color: $textNotesColor; }
+  &.notes_bg { background: $bgNotesColor; }
+  &.notes_border { border: solid 1px $borderNotesColor; }
+  // disabled
+  &.disabled_text { color: $textDisabledColor; }
+  &.disabled_bg { background: $bgDisabledColor; }
+  &.disabled_border { border: solid 1px $borderDisabledColor; }
+}
+
 // dummy box
 .dmy_box {
   @include border-radius();
@@ -130,8 +161,4 @@ $docsPointColor: #f69;
 
 .dmy_h100 {
   height: 100px;
-}
-
-.dmy_h50 {
-  height: 50px;
 }

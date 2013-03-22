@@ -1,7 +1,7 @@
 .form_text {
   @include paddingForm();
   @include inline-block();
-  @include borderDisable();
+  @include borderDisabled();
   @include border-radius(5px);
   @include bgForm();
 }

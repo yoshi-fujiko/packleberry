@@ -28,7 +28,7 @@
     $left:$borderDefaultWidth,
     $type:$borderStyleSolid
   ) {
-    border: $borderNoteColor $type;
+    border: $borderNotesColor $type;
     border-width: $top $right $bottom $left;
 }
 
@@ -54,13 +54,13 @@
     border-width: $top $right $bottom $left;
 }
 
-@mixin borderDisable (
+@mixin borderDisabled (
     $top:$borderDefaultWidth,
     $right:$borderDefaultWidth,
     $bottom:$borderDefaultWidth,
     $left:$borderDefaultWidth,
     $type:$borderStyleSolid
   ) {
-    border: $borderDisableColor $type;
+    border: $borderDisabledColor $type;
     border-width: $top $right $bottom $left;
 }

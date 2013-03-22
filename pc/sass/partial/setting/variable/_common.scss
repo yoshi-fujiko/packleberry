@@ -40,8 +40,8 @@ $h2DefaultSizeLv1: 32;
 $h2DefaultSizeLv2: 26;
 $h3DefaultSizeLv1: 26;
 $h3DefaultSizeLv2: 19;
-$h4DefaultSizeLv1: 13;
-$h5DefaultSizeLv1: 11;
+$h4DefaultSizeLv1: 16;
+$h5DefaultSizeLv1: 13;
 $h6DefaultSizeLv1: 11;
 $headingUnit: px;
 
@@ -50,7 +50,7 @@ $headingUnit: px;
 // font
 //============================================================
 // size
-$textDefaultSize: 13;
+$textDefaultSize: 14;
 $textHugeSize: ($textDefaultSize + 4);
 $textLargeSize: ($textDefaultSize + 2);
 $textMediumSize: $textDefaultSize;
@@ -70,10 +70,10 @@ $textLineHeight: $textDefaultSize * 0.1;
 // color
 $textDefaultColor: #333;
 $textWarningColor: #f00;
-$textNoteColor:    #666;
+$textNotesColor:   #666;
 $textErrorColor:   #c33;
 $textInfoColor:    #69c;
-$textDisableColor: #ccc;
+$textDisabledColor: #ccc;
 $textWhiteColor:   #fff;
 
 // text align
@@ -88,10 +88,10 @@ $textAlignRight:  right;
 // color
 $bgDefaultColor: #fff;
 $bgWarningColor: #f00;
-$bgNoteColor:    #666;
+$bgNotesColor:    #ddd;
 $bgErrorColor:   #c33;
 $bgInfoColor:    #69c;
-$bgDisableColor: #eee;
+$bgDisabledColor: #eee;
 $bgWhiteColor:   #fff;
 
 
@@ -101,10 +101,10 @@ $bgWhiteColor:   #fff;
 // color
 $borderDefaultColor: #333;
 $borderWarningColor: #f00;
-$borderNoteColor:    #666;
+$borderNotesColor:    #666;
 $borderErrorColor:   #c33;
 $borderInfoColor:    #69c;
-$borderDisableColor: #ccc;
+$borderDisabledColor: #ccc;
 $borderWhiteColor:   #fff;
 
 // style
@@ -121,7 +121,7 @@ $borderHugeWidth:    3px;
 //============================================================
 // table
 //============================================================
-$tableStripedColor: #ddd;
+$tableStripedColor: #cee;
 
 //============================================================
 // button

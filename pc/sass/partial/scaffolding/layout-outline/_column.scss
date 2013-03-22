@@ -16,7 +16,7 @@
    ) {
 	margin-top: $wrapperMarginTop;
 	margin-bottom: $wrapperMarginBottom;
-	.container{
+	&> .container{
 		width: 100%;
 	}
 }
@@ -32,18 +32,17 @@
    ) {
 	margin-top: $wrapperMarginTop;
 	margin-bottom: $wrapperMarginBottom;
-	.container{
+	&>.container{
 		width: 100%;
 		float: right;
 		margin-left: -$leftSidebarWidth;
+  	&>.contents_inner{
+  		position: relative;
+  		margin: 0 0 0 #{$leftSidebarWidth + $leftSidebarMargin};
+  	}
 	}
 	
-	.contents_inner{
-		position: relative;
-		margin: 0 0 0 #{$leftSidebarWidth + $leftSidebarMargin};
-	}
-	
-	.left_sidebar{
+	&>.left_sidebar{
 		width: $leftSidebarWidth;
 		float: left;
 	}
@@ -60,18 +59,17 @@
    ) {
 	margin-top: $wrapperMarginTop;
 	margin-bottom: $wrapperMarginBottom;
-	.container{
+	&>.container{
 		width: 100%;
 		float: left;
 		margin-right: -$rightSidebarWidth;
+  	&>.contents_inner{
+  		position: relative;
+  		margin: 0 #{$rightSidebarWidth + $rightSidebarMargin} 0 0;
+  	}
 	}
 	
-	.contents_inner{
-		position: relative;
-		margin: 0 #{$rightSidebarWidth + $rightSidebarMargin} 0 0;
-	}
-	
-	.right_sidebar{
+	&>.right_sidebar{
 		width: $rightSidebarWidth;
 		float: right;
 	}
@@ -90,29 +88,27 @@
   ) {
 	margin-top: $wrapperMarginTop;
 	margin-bottom: $wrapperMarginBottom;
-	.container {
+	&>.container {
 	  width: 100%;
 	  float: left;
 	  margin-right: -$rightSidebarWidth;
+  	&>.contents {
+  	  width: 100%;
+  	  float: right;
+  	  margin-left: -$leftSidebarWidth;
+    	&>.contents_inner {
+    	  position: relative;
+    	  margin: 0 #{$rightSidebarWidth + $rightSidebarMargin} 0 #{$leftSidebarWidth + $leftSidebarMargin};
+    	}
+  	}
+  	
+  	&>.left_sidebar {
+  	  width: $leftSidebarWidth;
+  	  float: left;
+  	}
 	}
 	
-	.contents {
-	  width: 100%;
-	  float: right;
-	  margin-left: -$leftSidebarWidth;
-	}
-	
-	.contents_inner {
-	  position: relative;
-	  margin: 0 #{$rightSidebarWidth + $rightSidebarMargin} 0 #{$leftSidebarWidth + $leftSidebarMargin};
-	}
-	
-	.left_sidebar {
-	  width: $leftSidebarWidth;
-	  float: left;
-	}
-	
-	.right_sidebar {
+	&>.right_sidebar {
 	  width: $rightSidebarWidth;
 	  float: right;
 	}

@@ -47,7 +47,7 @@
 }
 
 @mixin textNote {
-  color: $textNoteColor;
+  color: $textNotesColor;
 }
 
 @mixin textError {
@@ -58,8 +58,8 @@
   color: $textInfoColor;
 }
 
-@mixin textDisable {
-  color: $textDisableColor;
+@mixin textDisabled {
+  color: $textDisabledColor;
 }
 
 @mixin textWhite {

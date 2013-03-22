@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SPRINGBOARD: html base template">
+  <meta name="keywords" content="SPRINGBOARD, sass, compass">
+  <title>SPRINGBOARD: html base template</title>
+  <script src="../js/dev.js"></script>
+  <script>
+// 以下css
+  (function(){
+    DEV.changeStylesheet({
+      path: "../css/",
+      file: ["base","docs"],
+      pure: true
+    });
+  })();
+  </script>
+</head>
+<body>
+
+<div class="docs_container">
+
+  <header class="docs_header">
+    <hgroup class="docs_hgroup">
+      <h1 class="heading1_lv1">SPRINGBORAD verβ</h1>
+      <nav class="docs_nav">
+        <ul class="unstyled global_nav"><!--
+          --><li><a href="../index.html">HOME</a></li><!--
+          --><li><a href="scaffolding.html">Scaffolding</a></li><!--
+          --><li><a href="component.html">Component</a></li><!--
+          --><li><a href="skin.html">Skin</a></li><!--
+          --><li><a href="property.html">Property</a></li><!--
+        --></ul>
+      </nav>
+    </hgroup>
+  </header>
+
+  <div class="wrapper column2_left">
+  	<div class="container">
+  		<div class="contents_inner">
+
+    		<section id="docs_section">
+    		  <h1 class="heading1_lv2 docs_heading1">Scaffolding</h1>
+
+    		  <h2 class="heading2_lv2 docs_heading2" id="layout_outline">base html</h2>
+    		  <p class="txt_sentence docs_explan">base html</p>
+    		  <script src="https://gist.github.com/yoshi-fujiko/1f36550d23a39b7a7d1f.js"></script>
+
+    		  <h2 class="heading2_lv2 docs_heading2" id="layout_outline">layout outline</h2>
+    		  <p class="txt_sentence docs_explan">header</p>
+    		  <div class="example">
+      		  <header class="header">
+              <div class="dmy_box dmy_h50">ヘッダー</div>
+      		  </header>
+    		  </div>
+    		  <script src="https://gist.github.com/yoshi-fujiko/c117543cb752debb500f.js"></script>
+    		  
+    		  <p class="txt_sentence docs_explan">footer</p>
+    		  <div class="example">
+      		  <footer class="footer">
+              <div class="dmy_box dmy_h50">フッダー</div>
+      		  </footer>
+    		  </div>
+    		  <script src="https://gist.github.com/yoshi-fujiko/a5acb975d1707a0a77e0.js"></script>
+    		      		  
+    		  <p class="txt_sentence docs_explan">1column</p>
+    		  <div class="example">
+            <div class="wrapper column1">
+              <div class="container">
+                <div class="dmy_box dmy_h100">コンテンツ</div>
+              </div><!-- {* /.container *} -->
+            </div><!-- {* /.wrapper *} -->
+    		  </div>
+    		  <script src="https://gist.github.com/yoshi-fujiko/dfb923f07fab4d61df99.js"></script>
+
+    		  <p class="txt_sentence docs_explan">2column [sidebar left]</p>
+    		  <div class="example">
+            <div class="wrapper column2_left">
+            	<div class="container">
+            		<div class="contents_inner">
+              		<div class="dmy_box dmy_h100">コンテンツ</div>
+            		</div><!-- {* /.contents_inner *} -->
+            	</div><!-- {* /.container *} -->
+            	<div class="left_sidebar">
+              	<div class="dmy_box dmy_h100">左サイドバー</div>
+            	</div><!-- {* /.left_sidebar *} -->
+            </div><!-- {* /.wrapper *} -->
+    		  </div>
+    		  <script src="https://gist.github.com/yoshi-fujiko/5c845c3e828fddb63254.js"></script>
+
+    		  <p class="txt_sentence docs_explan">2column [sidebar right]</p>
+    		  <div class="example">
+            <div class="wrapper column2_right">
+            	<div class="container">
+            		<div class="contents_inner">
+              		<div class="dmy_box dmy_h100">コンテンツ</div>
+            		</div><!-- {* /.contents_inner *} -->
+            	</div><!-- {* /.container *} -->
+            	<div class="right_sidebar">
+              	<div class="dmy_box dmy_h100">右サイドバー</div>
+            	</div><!-- {* /.right_sidebar *} -->
+            </div><!-- {* /.wrapper *} -->
+    		  </div>
+    		  <script src="https://gist.github.com/yoshi-fujiko/5fdf4669f34d0db60c6f.js"></script>
+
+    		  <p class="txt_sentence docs_explan">3column</p>
+    		  <div class="example">
+            <div class="wrapper column3">
+              <div class="container">
+                <div class="contents">
+                  <div class="contents_inner">
+                    <div class="dmy_box dmy_h100">コンテンツ</div>
+                  </div><!-- {* /.contents_inner *} -->
+                </div><!-- {* /.contents *} -->
+                <div class="left_sidebar">
+                  <div class="dmy_box dmy_h100">左サイドバー</div>
+                </div><!-- {* /.left_sidebar *} -->
+              </div><!-- {* /.container *} -->
+              <div class="right_sidebar">
+                <div class="dmy_box dmy_h100">右サイドバー</div>
+              </div><!-- {* /.right_sidebar *} -->
+            </div><!-- {* /.wrapper *} -->
+    		  </div>
+    		  <script src="https://gist.github.com/yoshi-fujiko/3f62e5097ca640625a23.js"></script>
+
+    		  <h2 class="heading2_lv2 docs_heading2" id="grid">grid</h2>
+    		  <p class="txt_sentence docs_explan">説明文説明文説明文説明文</p>
+    		  <div class="example">
+            <div class="row_liquid">
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span1">
+            		<div class="dmy_box">1</div>
+            	</div>
+            </div>
+            
+            <div class="row_liquid">
+            	<div class="grid span1">
+              	<div class="dmy_box">1</div>
+            	</div>
+            	<div class="grid span11">
+              	<div class="dmy_box">11</div>
+            	</div>
+            </div>
+            
+            <div class="row_liquid">
+            	<div class="grid span3">
+              	<div class="dmy_box">3</div>
+            	</div>
+            	<div class="grid span6">
+              	<div class="dmy_box">6</div>
+            	</div>
+            	<div class="grid span3">
+              	<div class="dmy_box">3</div>
+            	</div>
+            </div>
+            
+            <div class="row_liquid">
+            	<div class="grid span2">
+              	<div class="dmy_box">2</div>
+            	</div>
+            	<div class="grid span2">
+              	<div class="dmy_box">2</div>
+            	</div>
+            	<div class="grid span8">
+              	<div class="dmy_box">8</div>
+            	</div>
+            </div>
+    		  </div>
+    		  <script src="https://gist.github.com/yoshi-fujiko/f890517fef1253f13bab.js"></script>
+    		
+    		</section>
+
+  		</div>
+  	</div>
+  	<div class="left_sidebar">
+  
+    	<nav class="docs_nav">
+      	<ul class="unstyled local_nav">
+        	<li><a href="#base_html" class="local_nav_link">base html</a></li>
+        	<li><a href="#layout_outline" class="local_nav_link">layout outline</a></li>
+        	<li><a href="#grid" class="local_nav_link">grid</a></li>
+      	</ul>
+    	</nav>
+  
+  	</div>
+  </div>
+
+  <footer></footer>
+
+</div>
+
+<script type="text/javascript" src="js/docs.js"></script>
+
+</body>
+</html>

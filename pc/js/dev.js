@@ -56,7 +56,7 @@ DEV = {
       if (typeof linkNode != "undefined") {
         head.appendChild(linkNode);
       }
-      console.log(linkNode);
+      //console.log(linkNode);
     }
   }
 }

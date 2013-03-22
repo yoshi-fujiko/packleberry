@@ -1,5 +1,8 @@
 .table_vertical {
   width: 100%;
+  th {
+    @include textBold();
+  }
   th, td {
     @include borderDefault(0, 1px, 0, 0);
     padding: 8px 4px;
