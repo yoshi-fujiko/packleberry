@@ -33,8 +33,11 @@ caption, th, td {
 q, blockquote {
   @include reset-quotation;
 }
-a img {
-  @include reset-image-anchor-border;
+a {
+  @include reset-link;
+  img {
+    @include reset-image-anchor-border;
+  }
 }
 hr {
   @include reset-hr;

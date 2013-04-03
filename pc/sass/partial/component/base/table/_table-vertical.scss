@@ -4,10 +4,10 @@
     @include textBold();
   }
   th, td {
-    @include borderDefault(0, 1px, 0, 0);
+    @include tableBorder(0, 1px, 0, 0);
     padding: 8px 4px;
     &:last-child {
-      @include borderDefault(0, 0, 0, 0);
+      @include tableBorder(0, 0, 0, 0);
     }
   }
 }

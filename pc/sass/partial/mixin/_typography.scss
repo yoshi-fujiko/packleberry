@@ -46,7 +46,7 @@
   color: $textWarningColor;
 }
 
-@mixin textNote {
+@mixin textNotes {
   color: $textNotesColor;
 }
 
@@ -64,6 +64,10 @@
 
 @mixin textWhite {
   color: $textWhiteColor;
+}
+
+@mixin textLink {
+  color: $textLinkColor;
 }
 
 

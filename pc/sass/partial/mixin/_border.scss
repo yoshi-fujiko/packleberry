@@ -1,4 +1,4 @@
-// border solid
+// border
 @mixin borderDefault (
     $top:$borderDefaultWidth,
     $right:$borderDefaultWidth,
@@ -62,5 +62,16 @@
     $type:$borderStyleSolid
   ) {
     border: $borderDisabledColor $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin tableBorder (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $tableBorder $type;
     border-width: $top $right $bottom $left;
 }

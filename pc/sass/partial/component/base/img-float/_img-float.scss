@@ -1,0 +1,15 @@
+.img_float {
+  @include legacy-pie-clearfix();
+  .thumb_img_right {
+    float: left;
+    @include marginRight();
+  }
+  .thumb_img_left {
+    float: right;
+    @include marginLeft();
+  }
+  .thumb_article {
+    overflow: hidden;
+    zoom: 1;
+  }
+}

@@ -68,13 +68,14 @@ $textFontFamily: Verdana,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hira
 $textLineHeight: $textDefaultSize * 0.105;
 
 // color
-$textDefaultColor: #333;
-$textWarningColor: #f00;
-$textNotesColor:   #666;
-$textErrorColor:   #c33;
-$textInfoColor:    #69c;
+$textDefaultColor:  #333;
+$textWarningColor:  #f00;
+$textNotesColor:    #666;
+$textErrorColor:    #c33;
+$textInfoColor:     #69c;
 $textDisabledColor: #ccc;
-$textWhiteColor:   #fff;
+$textWhiteColor:    #fff;
+$textLinkColor:     #00f;
 
 // text align
 $textAlignLeft:   left;
@@ -121,6 +122,9 @@ $borderHugeWidth:    3px;
 //============================================================
 // table
 //============================================================
+// border
+$tableBorder: #ccc;
+
 // background
 $tableStripedColor: #cee;
 
