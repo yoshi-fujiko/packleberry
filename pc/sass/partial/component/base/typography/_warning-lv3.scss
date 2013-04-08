@@ -1,4 +1,4 @@
 .txt_warning_lv3 {
-  @include textLarge;
+  @extend .txt_normal_lv3;
   @include textWarning;
 }

@@ -1,4 +1,4 @@
 .txt_notes_lv1 {
-  @include textSmall;
+  @extend .txt_normal_lv1;
   @include textNotes;
 }

@@ -1,4 +1,5 @@
 .btn_warning {
+  @extend .btn;
 	@include textWhite;
 	@include background-image(linear-gradient(top, #ee5f5b 0%, $bgWarningColor 100%));
 	@include borderWarning();
