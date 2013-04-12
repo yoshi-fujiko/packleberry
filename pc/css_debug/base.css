@@ -761,102 +761,102 @@ input.comment, textarea.comment, select.comment {
 }
 
 /* line 2, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginTop0 {
+.margin_top0 {
   margin-top: 0;
 }
 
 /* line 6, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginTop {
+.margin_top {
   margin-top: 10px;
 }
 
 /* line 10, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginTopHuge {
+.margin_top_huge {
   margin-top: 20px;
 }
 
 /* line 14, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginTopLarge {
+.margin_top_large {
   margin-top: 15px;
 }
 
 /* line 18, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginTopSmall {
+.margin_top_small {
   margin-top: 5px;
 }
 
 /* line 23, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginRight0 {
+.margin_right0 {
   margin-right: 0;
 }
 
 /* line 27, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginRight {
+.margin_right {
   margin-right: 10px;
 }
 
 /* line 31, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginRightHuge {
+.margin_right_huge {
   margin-right: 20px;
 }
 
 /* line 35, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginRightLarge {
+.margin_right_large {
   margin-right: 15px;
 }
 
 /* line 39, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginRightSmall {
+.margin_right_small {
   margin-right: 5px;
 }
 
 /* line 44, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginBottom0 {
+.margin_bottom0 {
   margin-bottom: 0;
 }
 
 /* line 48, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginBottom {
+.margin_bottom {
   margin-bottom: 10px;
 }
 
 /* line 52, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginBottomHuge {
+.margin_bottom_huge {
   margin-bottom: 20px;
 }
 
 /* line 56, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginBottomLarge {
+.margin_bottom_large {
   margin-bottom: 15px;
 }
 
 /* line 60, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginBottomSmall {
+.margin_bottom_small {
   margin-bottom: 5px;
 }
 
 /* line 65, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginLeft0 {
+.margin_left0 {
   margin-left: 0;
 }
 
 /* line 69, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginLeft {
+.margin_left {
   margin-left: 10px;
 }
 
 /* line 73, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginLeftHuge {
+.margin_left_huge {
   margin-left: 20px;
 }
 
 /* line 77, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginLeftLarge {
+.margin_left_large {
   margin-left: 15px;
 }
 
 /* line 81, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/skin/_margin.scss */
-.marginLeftSmall {
+.margin_left_small {
   margin-left: 5px;
 }
 

@@ -1,83 +1,83 @@
-// margin top
-.marginTop0 {
+// margin _top
+.margin_top0 {
 	margin-top: 0;
 }
 
-.marginTop {
-  margin-top: $spacing;
+.margin_top {
+  @include marginTop;
 }
 
-.marginTopHuge {
-  margin-top: $spacingHuge;
+.margin_top_huge {
+  @include marginTopHuge;
 }
 
-.marginTopLarge {
-  margin-top: $spacingLarge;
+.margin_top_large {
+  @include marginTopLarge;
 }
 
-.marginTopSmall {
-  margin-top: $spacingSmall;
+.margin_top_small {
+  @include marginTopSmall;
 }
 
-// margin right
-.marginRight0 {
+// margin _right
+.margin_right0 {
   margin-right: 0;
 }
 
-.marginRight {
-  margin-right: $spacing;
+.margin_right {
+  @include marginRight;
 }
 
-.marginRightHuge {
-  margin-right: $spacingHuge;
+.margin_right_huge {
+  @include marginRightHuge;
 }
 
-.marginRightLarge {
-  margin-right: $spacingLarge;
+.margin_right_large {
+  @include marginRightLarge;
 }
 
-.marginRightSmall {
-  margin-right: $spacingSmall;
+.margin_right_small {
+  @include marginRightSmall;
 }
 
-// margin bottom
-.marginBottom0 {
+// margin _bottom
+.margin_bottom0 {
   margin-bottom: 0;
 }
 
-.marginBottom {
-  margin-bottom: $spacing;
+.margin_bottom {
+  @include marginBottom;
 }
 
-.marginBottomHuge {
-  margin-bottom: $spacingHuge;
+.margin_bottom_huge {
+  @include marginBottomHuge;
 }
 
-.marginBottomLarge {
-  margin-bottom: $spacingLarge;
+.margin_bottom_large {
+  @include marginBottomLarge;
 }
 
-.marginBottomSmall {
-  margin-bottom: $spacingSmall;
+.margin_bottom_small {
+  @include marginBottomSmall;
 }
 
-// margin left
-.marginLeft0 {
+// margin _left
+.margin_left0 {
   margin-left: 0;
 }
 
-.marginLeft {
-  margin-left: $spacing;
+.margin_left {
+  @include marginLeft;
 }
 
-.marginLeftHuge {
-  margin-left: $spacingHuge;
+.margin_left_huge {
+  @include marginLeftHuge;
 }
 
-.marginLeftLarge {
-  margin-left: $spacingLarge;
+.margin_left_large {
+  @include marginLeftLarge;
 }
 
-.marginLeftSmall {
-  margin-left: $spacingSmall;
+.margin_left_small {
+  @include marginLeftSmall;
 }
