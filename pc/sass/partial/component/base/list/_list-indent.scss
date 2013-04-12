@@ -1,4 +1,4 @@
-.list_indent > li {
+.list_indent>li {
   @include indent;
   @include marginBottomSmall;
   @include lastChildMarginBottom;

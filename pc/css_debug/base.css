@@ -694,6 +694,14 @@ input.comment, textarea.comment, select.comment {
 .list_normal {
   padding-left: 1.5em;
 }
+/* line 3, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/list/_list-normal.scss */
+.list_normal > li {
+  margin-bottom: 5px;
+}
+/* line 10, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/mixin/_pseudo-classes-child-margin.scss */
+.list_normal > li:last-child {
+  margin-bottom: 0;
+}
 
 /* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/list/_list-indent.scss */
 .list_indent > li {

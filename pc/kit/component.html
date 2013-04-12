@@ -295,8 +295,8 @@
     		  <div class="example">
       		  <table class="table_horizon">
       		    <colgroup>
-      		      <col width="20%">
-      		      <col width="80%">
+      		      <col width="25%">
+      		      <col width="75%">
       		    </colgroup>
       		    <tbody>
       		      <tr>
@@ -332,6 +332,12 @@
       		        </td>
       		      </tr>
       		      <tr>
+      		        <td>パスワード（確認）</td>
+      		        <td>
+        		        <input type="password" class="form_password password">
+      		        </td>
+      		      </tr>
+      		      <tr>
       		        <td>秘密の合い言葉</td>
       		        <td>
         		        <select class="form_select">
@@ -352,6 +358,20 @@
       		        </td>
       		      </tr>
       		      <tr>
+      		        <td>生年月日</td>
+      		        <td>
+        		        <select class="form_select">
+        		          <option>2000</option>
+        		        </select>年
+        		        <select class="form_select">
+        		          <option>1</option>
+        		        </select>月
+        		        <select class="form_select">
+        		          <option>1</option>
+        		        </select>日
+      		        </td>
+      		      </tr>
+      		      <tr>
       		        <td>年齢</td>
       		        <td>
         		        <input type="text" class="form_text age">歳
@@ -361,14 +381,21 @@
       		        <td>郵便番号</td>
       		        <td>
         		        <input type="text" class="form_text zip">-<input type="text" class="form_text zip">
+        		        <div class="btn">住所検索</div>
       		        </td>
       		      </tr>
       		      <tr>
       		        <td>都道府県</td>
       		        <td>
         		        <select class="form_select">
-        		          <option>東京</option>
+        		          <option>北海道</option>
         		        </select>
+      		        </td>
+      		      </tr>
+      		      <tr>
+      		        <td>市町村区</td>
+      		        <td>
+        		        <input type="text" class="form_text address">
       		        </td>
       		      </tr>
       		      <tr>
