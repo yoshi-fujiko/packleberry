@@ -293,7 +293,7 @@
 
     		  <p class="txt_sentence docs_explan">説明文説明文説明文説明文</p>
     		  <div class="example">
-      		  <table class="table_horizon">
+      		  <table class="table_form">
       		    <colgroup>
       		      <col width="25%">
       		      <col width="75%">
@@ -302,15 +302,13 @@
       		      <tr>
       		        <td>お名前</td>
       		        <td>
-        		        姓：<input type="text" class="form_text name2">
-        		        名：<input type="text" class="form_text name2">
+        		        <span class="form_concat horizon">姓：<input type="text" class="form_text name2"></span><span class="form_concat horizon">名：<input type="text" class="form_text name2"></span>
       		        </td>
       		      </tr>
       		      <tr>
       		        <td>カナ</td>
       		        <td>
-        		        セイ：<input type="text" class="form_text name2">
-        		        メイ：<input type="text" class="form_text name2">
+        		        <span class="form_concat horizon">セイ：<input type="text" class="form_text name2"></span><span class="form_concat horizon">メイ：<input type="text" class="form_text name2"></span>
       		        </td>
       		      </tr>
       		      <tr>
@@ -340,48 +338,44 @@
       		      <tr>
       		        <td>秘密の合い言葉</td>
       		        <td>
-        		        <select class="form_select">
+        		        <div class="form_concat vertical"><select class="form_select">
         		          <option>パスフレーズ</option>
         		          <option>卒業した学校名</option>
         		          <option>ペットの名前</option>
         		          <option>好きな果物</option>
         		          <option>今まで食べた食パンの枚数</option>
-        		        </select>
-        		        <input type="text" class="form_text pass_phrase">
+        		        </select></div>
+        		        <div class="form_concat vertical"><input type="text" class="form_text pass_phrase"></div>
       		        </td>
       		      </tr>
       		      <tr>
       		        <td>性別</td>
       		        <td>
-        		        <label class="form_radio"><input type="radio">男</label>
-        		        <label class="form_radio"><input type="radio">女</label>
+        		        <span class="form_concat horizon"><label class="form_radio"><input type="radio">男</label></span><span class="form_concat horizon"><label class="form_radio"><input type="radio">女</label></span>
       		        </td>
       		      </tr>
       		      <tr>
       		        <td>生年月日</td>
       		        <td>
-        		        <select class="form_select">
+        		        <span class="form_concat horizon"><select class="form_select">
         		          <option>2000</option>
-        		        </select>年
-        		        <select class="form_select">
+        		        </select> 年</span><span class="form_concat horizon"><select class="form_select">
         		          <option>1</option>
-        		        </select>月
-        		        <select class="form_select">
+        		        </select> 月</span><span class="form_concat horizon"><select class="form_select">
         		          <option>1</option>
-        		        </select>日
+        		        </select> 日</span>
       		        </td>
       		      </tr>
       		      <tr>
       		        <td>年齢</td>
       		        <td>
-        		        <input type="text" class="form_text age">歳
+        		        <input type="text" class="form_text age"> 歳
       		        </td>
       		      </tr>
       		      <tr>
       		        <td>郵便番号</td>
       		        <td>
-        		        <input type="text" class="form_text zip">-<input type="text" class="form_text zip">
-        		        <div class="btn">住所検索</div>
+        		        <span class="form_concat horizon"><input type="text" class="form_text zip"> - <input type="text" class="form_text zip"></span><span class="form_concat horizon"><div class="btn">住所検索</div></span>
       		        </td>
       		      </tr>
       		      <tr>
@@ -413,7 +407,7 @@
       		      <tr>
       		        <td>電話番号</td>
       		        <td>
-        		        <input type="text" class="form_text tel3">-<input type="text" class="form_text tel3">-<input type="text" class="form_text tel3">
+        		        <input type="text" class="form_text tel3"> - <input type="text" class="form_text tel3"> - <input type="text" class="form_text tel3">
       		        </td>
       		      </tr>
       		      <tr>

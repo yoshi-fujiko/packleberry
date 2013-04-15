@@ -392,22 +392,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/table/_table-horizon.scss */
-.table_horizon {
+.table_horizon, .table_form {
   width: 100%;
 }
 /* line 3, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/table/_table-horizon.scss */
-.table_horizon th {
+.table_horizon th, .table_form th {
   font-weight: bold;
 }
 /* line 6, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/table/_table-horizon.scss */
-.table_horizon th, .table_horizon td {
+.table_horizon th, .table_form th, .table_horizon td, .table_form td {
   border: #cccccc solid;
   border-width: 0 0 1px 0;
   padding: 8px 4px;
 }
 /* line 11, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/table/_table-horizon.scss */
-.table_horizon tr:last-child th,
-.table_horizon tr:last-child td {
+.table_horizon tr:last-child th, .table_form tr:last-child th,
+.table_horizon tr:last-child td,
+.table_form tr:last-child td {
   border: #cccccc solid;
   border-width: 0 0 0 0;
 }
@@ -682,12 +683,26 @@ input.password, textarea.password, select.password {
 }
 /* line 42, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/form/_form_rule.scss */
 input.pass_phrase, textarea.pass_phrase, select.pass_phrase {
-  width: 100px;
+  width: 200px;
 }
 /* line 46, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/form/_form_rule.scss */
 input.comment, textarea.comment, select.comment {
   width: 400px;
   height: 80px;
+}
+
+/* line 2, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/form/_form_concat.scss */
+.form_concat.vertical {
+  margin-bottom: 10px;
+}
+/* line 5, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/form/_form_concat.scss */
+.form_concat.horizon {
+  margin-right: 10px;
+}
+/* line 8, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/form/_form_concat.scss */
+.form_concat:last-child {
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 /* line 1, /Users/yoshihiro.fujita/work/packleberry/pc/sass/partial/component/base/list/_list-normal.scss */

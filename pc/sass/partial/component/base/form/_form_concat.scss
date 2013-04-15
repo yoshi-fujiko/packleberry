@@ -1,0 +1,12 @@
+.form_concat {
+  &.vertical {
+    margin-bottom: 10px;
+  }
+  &.horizon {
+    margin-right: 10px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
