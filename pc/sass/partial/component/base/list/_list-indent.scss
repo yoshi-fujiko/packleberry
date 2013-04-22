@@ -1,5 +1,7 @@
 .list_indent>li {
   @include indent;
   @include marginBottomSmall;
-  @include lastChildMarginBottom;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

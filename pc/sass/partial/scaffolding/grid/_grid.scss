@@ -21,7 +21,9 @@
       width: #{(($rowWidth + $gridMargin) / $gridNum) * $i - $gridMargin}#{$gridUnit};
       margin-right: #{$gridMargin}#{$gridUnit};
       float: left;
-      @include lastChildMarginRight;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
