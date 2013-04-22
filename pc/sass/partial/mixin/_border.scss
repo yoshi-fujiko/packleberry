@@ -75,3 +75,25 @@
     border: $tableBorder $type;
     border-width: $top $right $bottom $left;
 }
+
+@mixin tableFormBorder (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $tableFormBorder $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin formBorder (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $formBorder $type;
+    border-width: $top $right $bottom $left;
+}

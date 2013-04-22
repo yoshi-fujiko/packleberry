@@ -1,5 +1,5 @@
 .form_select {
   @include inline-block();
-  @include borderDisabled();
+  @include formBorder();
   @include paddingSmall();
 }

@@ -50,7 +50,7 @@ $headingUnit: px;
 // font
 //============================================================
 // size
-$textDefaultSize: 14;
+$textDefaultSize: 13;
 $textHugeSize: ($textDefaultSize + 4);
 $textLargeSize: ($textDefaultSize + 2);
 $textMediumSize: $textDefaultSize;
@@ -62,20 +62,10 @@ $textNoramlWeight: normal;
 $textBoldWeight:   bold;
 
 // family
-$textFontFamily: Verdana,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+$textFontFamily: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 
 // line-heihgt
 $textLineHeight: $textDefaultSize * 0.105;
-
-// color
-$textDefaultColor:  #333;
-$textWarningColor:  #f00;
-$textNotesColor:    #666;
-$textErrorColor:    #c33;
-$textInfoColor:     #69c;
-$textDisabledColor: #ccc;
-$textWhiteColor:    #fff;
-$textLinkColor:     #00f;
 
 // text align
 $textAlignLeft:   left;
@@ -86,28 +76,11 @@ $textAlignRight:  right;
 //============================================================
 // background
 //============================================================
-// color
-$bgDefaultColor: #fff;
-$bgWarningColor: #f00;
-$bgNotesColor:    #ddd;
-$bgErrorColor:   #c33;
-$bgInfoColor:    #69c;
-$bgDisabledColor: #eee;
-$bgWhiteColor:   #fff;
 
 
 //============================================================
 // border
 //============================================================
-// color
-$borderDefaultColor: #333;
-$borderWarningColor: #f00;
-$borderNotesColor:    #666;
-$borderErrorColor:   #c33;
-$borderInfoColor:    #69c;
-$borderDisabledColor: #ccc;
-$borderWhiteColor:   #fff;
-
 // style
 $borderStyleSolid:  solid;
 $borderStyleDotted: dotted;
@@ -124,6 +97,7 @@ $borderHugeWidth:    3px;
 //============================================================
 // border
 $tableBorder: #ccc;
+$tableFormBorder: #f2f2f2;
 
 // background
 $tableStripedColor: #cee;
@@ -142,6 +116,9 @@ $btnWidthUnit: px;
 //============================================================
 // form
 //============================================================
+// border
+$formBorder: #ccc;
+
 // width
 $formWidthName1:      200;
 $formWidthName2:      100;

@@ -1,7 +1,7 @@
-.form_textarea {
+.form_text {
   @include paddingForm();
   @include inline-block();
-  @include borderDisabled();
+  @include formBorder();
   @include border-radius(5px);
   @include bgForm();
 }

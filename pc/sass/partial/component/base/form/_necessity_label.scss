@@ -1,0 +1,10 @@
+.necessity_label {
+  color: #fff;
+  background: #f00;
+  padding: 2px;
+  margin-left: 10px;
+  @include textNormal;
+  @include textSmall;
+  @include inline-block;
+  @include border-radius(3px);
+}

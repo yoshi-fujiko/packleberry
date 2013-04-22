@@ -295,91 +295,136 @@
     		  <div class="example">
       		  <table class="table_form">
       		    <colgroup>
-      		      <col width="25%">
-      		      <col width="75%">
+      		      <col width="30%">
+      		      <col width="70%">
       		    </colgroup>
       		    <tbody>
       		      <tr>
-      		        <td>お名前</td>
+      		        <th>お名前<span class="necessity_label">必須</span></th>
       		        <td>
-        		        <span class="form_concat horizon">姓：<input type="text" class="form_text name2"></span><span class="form_concat horizon">名：<input type="text" class="form_text name2"></span>
+        		        <div class="form_group">
+        		          <span class="horizone near">姓</span><span class="horizone far"><input type="text" class="form_text name2"></span><!--
+        		          --><span class="horizone near">名</span><span class="horizone near"><input type="text" class="form_text name2"></span>
+        		        </div>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>カナ</td>
-      		        <td>
-        		        <span class="form_concat horizon">セイ：<input type="text" class="form_text name2"></span><span class="form_concat horizon">メイ：<input type="text" class="form_text name2"></span>
+      		        <th>カナ<span class="necessity_label">必須</span></th>
+      		        <td class="cell_error">
+      		          <p class="form_error_msg">カナを入力してください。</p>
+        		        <div class="form_group">
+        		          <span class="horizone near">セイ</span><span class="horizone far"><input type="text" class="form_text name2"></span><!--
+        		          --><span class="horizone near">メイ</span><span class="horizone near"><input type="text" class="form_text name2"></span>
+        		        </div>
+      		          <ul class="unstyled">
+      		            <li class="form_notes_msg">半角カタカナで入力してください</li>
+      		          </ul>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>ニックネーム</td>
+      		        <th>ニックネーム</th>
       		        <td>
         		        <input type="text" class="form_text name1">
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>メールアドレス</td>
+      		        <th>メールアドレス<span class="necessity_label">必須</span></th>
       		        <td>
         		        <input type="text" class="form_text email">
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>パスワード</td>
+      		        <th>パスワード<span class="necessity_label">必須</span></th>
       		        <td>
+        		        <input type="password" class="form_password password">
+      		          <ul class="unstyled">
+      		            <li class="form_notes_msg">8文字以上12文字以内で入力してください</li>
+      		          </ul>
+      		        </td>
+      		      </tr>
+      		      <tr>
+      		        <th>パスワード（確認）<span class="necessity_label">必須</span></th>
+      		        <td class="cell_error">
+      		          <p class="form_error_msg">パスワードが一致しません</p>
         		        <input type="password" class="form_password password">
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>パスワード（確認）</td>
+      		        <th>秘密の合い言葉</th>
       		        <td>
-        		        <input type="password" class="form_password password">
+      		          <div class="form_group">
+      		            <div class="vertical near">
+                        <select class="form_select">
+                          <option>パスフレーズ</option>
+                          <option>卒業した学校名</option>
+                          <option>ペットの名前</option>
+                          <option>好きな果物</option>
+                          <option>今まで食べた食パンの枚数</option>
+                        </select>
+      		            </div>
+      		            <div class="vertical near">
+        		            <input type="text" class="form_text pass_phrase">
+      		            </div>
+      		          </div>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>秘密の合い言葉</td>
+      		        <th>性別</th>
       		        <td>
-        		        <div class="form_concat vertical"><select class="form_select">
-        		          <option>パスフレーズ</option>
-        		          <option>卒業した学校名</option>
-        		          <option>ペットの名前</option>
-        		          <option>好きな果物</option>
-        		          <option>今まで食べた食パンの枚数</option>
-        		        </select></div>
-        		        <div class="form_concat vertical"><input type="text" class="form_text pass_phrase"></div>
+        		        <div class="form_group">
+        		          <label class="horizone far"><span class="horizone near"><input type="radio" name="sex" checked></span><span class="horizone">男</span></label><!--
+        		          --><label class="horizone far"><span class="horizone near"><input type="radio" name="sex"></span><span class="horizone">女</span></label>
+        		        </div>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>性別</td>
+      		        <th>生年月日</th>
       		        <td>
-        		        <span class="form_concat horizon"><label class="form_radio"><input type="radio">男</label></span><span class="form_concat horizon"><label class="form_radio"><input type="radio">女</label></span>
+      		          <div class="form_group">
+      		            <span class="horizone near"><select class="form_select">
+          		          <option>2000</option>
+        		            </select></span><!--
+      		            --><span class="horizone far">年</span><!--
+      		            --><span class="horizone near"><select class="form_select">
+          		          <option>1</option>
+        		            </select></span><!--
+      		            --><span class="horizone far">月</span><!--
+      		            --><span class="horizone near"><select class="form_select">
+          		          <option>1</option>
+        		            </select></span><!--
+      		            --><span class="horizone far">日</span>
+      		          </div>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>生年月日</td>
-      		        <td>
-        		        <span class="form_concat horizon"><select class="form_select">
-        		          <option>2000</option>
-        		        </select> 年</span><span class="form_concat horizon"><select class="form_select">
-        		          <option>1</option>
-        		        </select> 月</span><span class="form_concat horizon"><select class="form_select">
-        		          <option>1</option>
-        		        </select> 日</span>
+      		        <th>年齢</th>
+      		        <td class="cell_error">
+      		          <p class="form_error_msg">半角数字で入力してください</p>
+        		        <div class="form_group">
+        		          <span class="horizone near"><input type="text" class="form_text age"></span><span class="horizone far">歳</span>
+        		        </div>
+      		          <ul class="unstyled">
+      		            <li class="form_notes_msg">半角数字で入力してください</li>
+      		          </ul>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>年齢</td>
-      		        <td>
-        		        <input type="text" class="form_text age"> 歳
+      		        <th>郵便番号</th>
+      		        <td class="cell_error">
+      		          <p class="form_error_msg">半角数字で入力してください</p>
+        		        <div class="form_group">
+        		          <span class="horizone near"><input type="text" class="form_text zip"></span><!--
+        		          --><span class="horizone near">-</span><!--
+        		          --><span class="horizone far"><input type="text" class="form_text zip"></span><!--
+        		          --><span class="horizone"><span class="btn">住所検索</span></span>
+        		        </div>
+      		          <ul class="unstyled">
+      		            <li class="form_notes_msg">半角数字で入力してください</li>
+      		          </ul>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>郵便番号</td>
-      		        <td>
-        		        <span class="form_concat horizon"><input type="text" class="form_text zip"> - <input type="text" class="form_text zip"></span><span class="form_concat horizon"><div class="btn">住所検索</div></span>
-      		        </td>
-      		      </tr>
-      		      <tr>
-      		        <td>都道府県</td>
+      		        <th>都道府県</th>
       		        <td>
         		        <select class="form_select">
         		          <option>北海道</option>
@@ -387,37 +432,50 @@
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>市町村区</td>
+      		        <th>市町村区</th>
       		        <td>
         		        <input type="text" class="form_text address">
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>住所</td>
+      		        <th>住所</th>
       		        <td>
         		        <input type="text" class="form_text address">
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>マンション名など</td>
+      		        <th>マンション名など</th>
       		        <td>
         		        <input type="text" class="form_text address">
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>電話番号</td>
+      		        <th>電話番号</th>
       		        <td>
-        		        <input type="text" class="form_text tel3"> - <input type="text" class="form_text tel3"> - <input type="text" class="form_text tel3">
+        		        <div class="form_group">
+        		          <span class="horizone near"><input type="text" class="form_text tel3"></span><!--
+        		          --><span class="horizone near">-</span><!--
+        		          --><span class="horizone far"><input type="text" class="form_text tel3"></span><!--
+        		          --><span class="horizone near">-</span><!--
+        		          --><span class="horizone far"><input type="text" class="form_text tel3"></span>
+        		        </div>
+      		          <ul class="unstyled">
+      		            <li class="form_notes_msg">半角数字で入力してください</li>
+      		          </ul>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>電話番号</td>
+      		        <th>電話番号</th>
       		        <td>
         		        <input type="text" class="form_text tel1">
+      		          <ul class="unstyled">
+      		            <li class="form_notes_msg">半角数字で入力してください</li>
+      		            <li class="form_notes_msg">例）000-0000-0000</li>
+      		          </ul>
       		        </td>
       		      </tr>
       		      <tr>
-      		        <td>コメント</td>
+      		        <th>コメント</th>
       		        <td>
         		        <textarea class="form_textarea comment"></textarea>
       		        </td>
