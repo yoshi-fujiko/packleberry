@@ -2,7 +2,9 @@
 ***
 
 ## What's this?
-HTML/SASSテンプレートです。
+HTML/SASSテンプレートです
+
+## example
 
 ## SPEC
 * Sass 3.2.1 (Media Mark)
