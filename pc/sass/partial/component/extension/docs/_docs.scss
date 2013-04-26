@@ -13,14 +13,16 @@ $docsPointColor: #f69;
 }
 
 .docs_top_gate {
-  border: solid 1px #fce0eb;
+  color: $docsTextColor;
+  text-decoration: none;
+  border: solid 1px $docsBorderColor;
   min-height: 120px;
-  @include box-shadow(#fdf2f6 0 1px 2px inset);
-  @include background-image(linear-gradient(#fff 50%, #fce0eb 100%));
+  display: block;
+  @include box-shadow($docsBorderColor 0 1px 2px inset);
   @include border-radius();
   .heading2_lv2 {
-    color: #f69;
-    padding: 5px 10px;
+    color: #666;
+    padding: 10px;
     text-decoration: none;
     display: block;
   }
@@ -70,6 +72,15 @@ $docsPointColor: #f69;
       }
     }
   }
+  
+  .sub_component_sass {
+    color: #aaa;
+    padding: 3px 5px;
+    margin-top: -0.8em;
+    background: #ececec;
+    border: solid $docsBorderColor;
+    border-width: 1px 1px 0 1px;
+  }
 }
 
 
@@ -82,6 +93,10 @@ $docsPointColor: #f69;
     background: #fff;
     width: 960px;
     position: fixed;
+    .heading1_lv1 {
+      font-size: 30px;
+      padding: 10px 0;
+    }
   }
 }
 
@@ -90,8 +105,9 @@ $docsPointColor: #f69;
   // global
   .global_nav {
     border: solid 1px $docsBorderColor;
-    @include border-radius(20px);
-    @include background-image(linear-gradient(#fff 50%, #fce0eb 100%));
+    background: #252525;
+    @include border-radius(5px);
+    @include box-shadow(0 1px 2px rgba(0,0,0,0.1));
     li {
       width: #{floor(954/5)}px;
       @include inline-block();
@@ -100,7 +116,7 @@ $docsPointColor: #f69;
         border-right: none; 
       }
       a {
-        color: #333;
+        color: #E8E8E8;
         padding: 5px;
         text-align: center;
         display: block;
@@ -113,10 +129,10 @@ $docsPointColor: #f69;
   .local_nav {
     width: 200px;
     position: fixed;
-    border: solid 1px $docsBorderColor;
-    @include border-radius(10px);
+    border: solid 1px #252525;
+    @include border-radius(5px);
     li {
-      border-bottom: solid 1px $docsBorderColor;
+      border-bottom: solid 1px #252525;
       &:last-child {
         border-bottom: none;
       }
@@ -124,7 +140,7 @@ $docsPointColor: #f69;
         display: block;
         padding: 10px 15px 8px 15px;
         font-weight: bold;
-        color: $docsPointColor;
+        color: #666;
         text-decoration: none;
       }
     }
@@ -160,6 +176,13 @@ $docsPointColor: #f69;
   &.disabled_text { color: $textDisabledColor; }
   &.disabled_bg { background: $bgDisabledColor; }
   &.disabled_border { border: solid 1px $borderDisabledColor; }
+}
+
+#docs_footer {
+  background: #252525;
+  color: #aaa;
+  padding: 5px;
+  text-align: right;
 }
 
 // dummy box
