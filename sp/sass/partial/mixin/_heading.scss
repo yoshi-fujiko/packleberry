@@ -1,0 +1,35 @@
+@mixin heading1Lv1 {
+  font-size: #{$h1DefaultSizeLv1}#{$headingUnit}
+}
+
+@mixin heading1Lv2 {
+  font-size: #{$h1DefaultSizeLv2}#{$headingUnit}
+}
+
+@mixin heading2Lv1 {
+  font-size: #{$h2DefaultSizeLv1}#{$headingUnit}
+}
+
+@mixin heading2Lv2 {
+  font-size: #{$h2DefaultSizeLv2}#{$headingUnit}
+}
+
+@mixin heading3Lv1 {
+  font-size: #{$h3DefaultSizeLv1}#{$headingUnit}
+}
+
+@mixin heading3Lv2 {
+  font-size: #{$h3DefaultSizeLv2}#{$headingUnit}
+}
+
+@mixin heading4Lv1 {
+  font-size: #{$h4DefaultSizeLv1}#{$headingUnit}
+}
+
+@mixin heading5Lv1 {
+  font-size: #{$h5DefaultSizeLv1}#{$headingUnit}
+}
+
+@mixin heading6Lv1 {
+  font-size: #{$h6DefaultSizeLv1}#{$headingUnit}
+}

@@ -1,0 +1,29 @@
+@mixin row(
+		$rowMargnTop:$rowDefaultMarginTop,
+		$rowMargnBottom:$rowDefaultMarginBottom,
+    $rowWidth:$rowDefaultWidth,
+    $gridMargin:$gridDefaultMargin,
+    $gridUnit:$gridDefaultUnit
+	) {
+  width: #{$rowWidth}#{$gridUnit};
+  margin: #{$rowMargnTop} auto #{$rowMargnBottom};
+  @include legacy-pie-clearfix();
+  @include span($rowWidth, $gridMargin, $gridUnit);
+}
+
+@mixin span(
+    $rowWidth:"",
+    $gridMargin:"",
+    $gridUnit:""
+  ) {
+  @for $i from 1 through $gridNum {
+    .span#{$i} {
+      width: #{(($rowWidth + $gridMargin) / $gridNum) * $i - $gridMargin}#{$gridUnit};
+      margin-right: #{$gridMargin}#{$gridUnit};
+      float: left;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+//============================================================
+// wrapper
+//============================================================
+.wrapper {
+  width: $wrapperWidth;
+  margin: 0 auto;
+  @include legacy-pie-clearfix();
+}
+
+//============================================================
+// 1カラム
+//============================================================
+@mixin column1(
+    $wrapperMarginTop:$wrapperDefaultMarginTop,
+    $wrapperMarginBottom:$wrapperDefaultMarginBottm
+   ) {
+	margin-top: $wrapperMarginTop;
+	margin-bottom: $wrapperMarginBottom;
+	&> .container{
+		width: 100%;
+	}
+}
+
+//============================================================
+// 2カラム（サイドバー：左）
+//============================================================
+@mixin column2_left(
+    $wrapperMarginTop:$wrapperDefaultMarginTop,
+    $wrapperMarginBottom:$wrapperDefaultMarginBottm,
+    $leftSidebarWidth:$leftSidebarDefaultWidth,
+    $leftSidebarMargin:$leftSidebarDefaultMargin
+   ) {
+	margin-top: $wrapperMarginTop;
+	margin-bottom: $wrapperMarginBottom;
+	&>.container{
+		width: 100%;
+		float: right;
+		margin-left: -$leftSidebarWidth;
+  	&>.contents_inner{
+  		position: relative;
+  		margin: 0 0 0 #{$leftSidebarWidth + $leftSidebarMargin};
+  	}
+	}
+	
+	&>.left_sidebar{
+		width: $leftSidebarWidth;
+		float: left;
+	}
+}
+
+//============================================================
+// 2カラム（サイドバー：右）
+//============================================================
+@mixin column2_right(
+    $wrapperMarginTop:$wrapperDefaultMarginTop,
+    $wrapperMarginBottom:$wrapperDefaultMarginBottm,
+    $rightSidebarWidth:$rightSidebarDefaultWidth,
+    $rightSidebarMargin:$rightSidebarDefaultMargin
+   ) {
+	margin-top: $wrapperMarginTop;
+	margin-bottom: $wrapperMarginBottom;
+	&>.container{
+		width: 100%;
+		float: left;
+		margin-right: -$rightSidebarWidth;
+  	&>.contents_inner{
+  		position: relative;
+  		margin: 0 #{$rightSidebarWidth + $rightSidebarMargin} 0 0;
+  	}
+	}
+	
+	&>.right_sidebar{
+		width: $rightSidebarWidth;
+		float: right;
+	}
+}
+
+//============================================================
+// 3カラム
+//============================================================
+@mixin column3(
+    $wrapperMarginTop:$wrapperDefaultMarginTop,
+    $wrapperMarginBottom:$wrapperDefaultMarginBottm,
+    $leftSidebarWidth:$leftSidebarDefaultWidth,
+    $leftSidebarMargin:$leftSidebarDefaultMargin,
+    $rightSidebarWidth:$rightSidebarDefaultWidth,
+    $rightSidebarMargin:$rightSidebarDefaultMargin
+  ) {
+	margin-top: $wrapperMarginTop;
+	margin-bottom: $wrapperMarginBottom;
+	&>.container {
+	  width: 100%;
+	  float: left;
+	  margin-right: -$rightSidebarWidth;
+  	&>.contents {
+  	  width: 100%;
+  	  float: right;
+  	  margin-left: -$leftSidebarWidth;
+    	&>.contents_inner {
+    	  position: relative;
+    	  margin: 0 #{$rightSidebarWidth + $rightSidebarMargin} 0 #{$leftSidebarWidth + $leftSidebarMargin};
+    	}
+  	}
+  	
+  	&>.left_sidebar {
+  	  width: $leftSidebarWidth;
+  	  float: left;
+  	}
+	}
+	
+	&>.right_sidebar {
+	  width: $rightSidebarWidth;
+	  float: right;
+	}
+}

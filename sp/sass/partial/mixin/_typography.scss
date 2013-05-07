@@ -1,0 +1,87 @@
+//============================================================
+// font-size
+//============================================================
+@mixin textHuge {
+  font-size: #{$textHugeSize}#{$textUnit};
+}
+
+@mixin textLarge {
+  font-size: #{$textLargeSize}#{$textUnit};
+}
+
+@mixin textMedium {
+  font-size: #{$textMediumSize}#{$textUnit};
+}
+
+@mixin textSmall {
+  font-size: #{$textSmallSize}#{$textUnit};
+}
+
+//============================================================
+// line-height
+//============================================================
+@mixin sentence {
+  line-height: $textLineHeight;
+}
+
+//============================================================
+// font-weight
+//============================================================
+@mixin textNormal {
+  font-weight: $textNoramlWeight;
+}
+
+@mixin textBold {
+  font-weight: $textBoldWeight;
+}
+
+//============================================================
+// color
+//============================================================
+@mixin textDefault {
+	color: $textDefaultColor;
+}
+
+@mixin textWarning {
+  color: $textWarningColor;
+}
+
+@mixin textNotes {
+  color: $textNotesColor;
+}
+
+@mixin textError {
+  color: $textErrorColor;
+}
+
+@mixin textInfo {
+  color: $textInfoColor;
+}
+
+@mixin textDisabled {
+  color: $textDisabledColor;
+}
+
+@mixin textWhite {
+  color: $textWhiteColor;
+}
+
+@mixin textLink {
+  color: $textLinkColor;
+}
+
+
+//============================================================
+// text-align
+//============================================================
+@mixin textAlignLeft {
+  text-align: left;
+}
+
+@mixin textAlignCenter {
+  text-align: center;
+}
+
+@mixin textAlignRight {
+  text-align: right;
+}

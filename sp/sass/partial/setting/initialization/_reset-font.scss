@@ -1,0 +1,6 @@
+@mixin reset-font {
+  font: inherit;
+  font-size: #{$textDefaultSize}px;
+  vertical-align: baseline;
+  font-family: $textFontFamily;
+}

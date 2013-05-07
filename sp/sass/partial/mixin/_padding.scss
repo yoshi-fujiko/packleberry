@@ -1,0 +1,7 @@
+@mixin paddingDefault {
+    padding: $padding;
+}
+
+@mixin paddingSmall {
+    padding: $paddingSmall;
+}

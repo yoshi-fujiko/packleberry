@@ -1,0 +1,83 @@
+// margin _top
+.margin_top0 {
+	margin-top: 0;
+}
+
+.margin_top {
+  @include marginTop;
+}
+
+.margin_top_huge {
+  @include marginTopHuge;
+}
+
+.margin_top_large {
+  @include marginTopLarge;
+}
+
+.margin_top_small {
+  @include marginTopSmall;
+}
+
+// margin _right
+.margin_right0 {
+  margin-right: 0;
+}
+
+.margin_right {
+  @include marginRight;
+}
+
+.margin_right_huge {
+  @include marginRightHuge;
+}
+
+.margin_right_large {
+  @include marginRightLarge;
+}
+
+.margin_right_small {
+  @include marginRightSmall;
+}
+
+// margin _bottom
+.margin_bottom0 {
+  margin-bottom: 0;
+}
+
+.margin_bottom {
+  @include marginBottom;
+}
+
+.margin_bottom_huge {
+  @include marginBottomHuge;
+}
+
+.margin_bottom_large {
+  @include marginBottomLarge;
+}
+
+.margin_bottom_small {
+  @include marginBottomSmall;
+}
+
+// margin _left
+.margin_left0 {
+  margin-left: 0;
+}
+
+.margin_left {
+  @include marginLeft;
+}
+
+.margin_left_huge {
+  @include marginLeftHuge;
+}
+
+.margin_left_large {
+  @include marginLeftLarge;
+}
+
+.margin_left_small {
+  @include marginLeftSmall;
+}

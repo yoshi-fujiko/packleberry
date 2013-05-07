@@ -1,0 +1,67 @@
+// margin top
+@mixin marginTop {
+  margin-top: $spacing;
+}
+
+@mixin marginTopHuge {
+  margin-top: $spacingHuge;
+}
+
+@mixin marginTopLarge {
+  margin-top: $spacingLarge;
+}
+
+@mixin marginTopSmall {
+  margin-top: $spacingSmall;
+}
+
+// margin right
+@mixin marginRight {
+  margin-right: $spacing;
+}
+
+@mixin marginRightHuge {
+  margin-right: $spacingHuge;
+}
+
+@mixin marginRightLarge {
+  margin-right: $spacingLarge;
+}
+
+@mixin marginRightSmall {
+  margin-right: $spacingSmall;
+}
+
+// margin bottom
+@mixin marginBottom {
+  margin-bottom: $spacing;
+}
+
+@mixin marginBottomHuge {
+  margin-bottom: $spacingHuge;
+}
+
+@mixin marginBottomLarge {
+  margin-bottom: $spacingLarge;
+}
+
+@mixin marginBottomSmall {
+  margin-bottom: $spacingSmall;
+}
+
+// margin left
+@mixin marginLeft {
+  margin-left: $spacing;
+}
+
+@mixin marginLeftHuge {
+  margin-left: $spacingHuge;
+}
+
+@mixin marginLeftLarge {
+  margin-left: $spacingLarge;
+}
+
+@mixin marginLeftSmall {
+  margin-left: $spacingSmall;
+}

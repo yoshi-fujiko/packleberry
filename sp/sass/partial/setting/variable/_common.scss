@@ -1,0 +1,136 @@
+//============================================================
+// image path
+//============================================================
+$imgPath: "../img/";
+
+
+//============================================================
+// spacing
+//============================================================
+$spacing: 10px;
+$spacingHuge:  ($spacing + 10px);
+$spacingLarge: ($spacing + 5px);
+$spacingSmall: ($spacing - 5px);
+
+
+//============================================================
+// section margin
+//============================================================
+$sectionMargin: 20px;
+$sectionMarginHuge:  ($sectionMargin + 10px);
+$sectionMarginLarge: ($sectionMargin + 5px);
+$sectionMarginSmall: ($sectionMargin - 5px);
+
+
+//============================================================
+// padding
+//============================================================
+$padding: 10px;
+$paddingHuge:  ($padding + 10px);
+$paddingLarge: ($padding + 5px);
+$paddingSmall: ($padding - 5px);
+
+
+//============================================================
+// Heading
+//============================================================
+$h1DefaultSizeLv1: 39;
+$h1DefaultSizeLv2: 32;
+$h2DefaultSizeLv1: 32;
+$h2DefaultSizeLv2: 26;
+$h3DefaultSizeLv1: 26;
+$h3DefaultSizeLv2: 19;
+$h4DefaultSizeLv1: 16;
+$h5DefaultSizeLv1: 13;
+$h6DefaultSizeLv1: 11;
+$headingUnit: px;
+
+
+//============================================================
+// font
+//============================================================
+// size
+$textDefaultSize: 13;
+$textHugeSize: ($textDefaultSize + 4);
+$textLargeSize: ($textDefaultSize + 2);
+$textMediumSize: $textDefaultSize;
+$textSmallSize: ($textDefaultSize - 2);
+$textUnit: px;
+
+// weight
+$textNoramlWeight: normal;
+$textBoldWeight:   bold;
+
+// family
+$textFontFamily: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+
+// line-heihgt
+$textLineHeight: $textDefaultSize * 0.105;
+
+// text align
+$textAlignLeft:   left;
+$textAlignCenter: center;
+$textAlignRight:  right;
+
+
+//============================================================
+// background
+//============================================================
+
+
+//============================================================
+// border
+//============================================================
+// style
+$borderStyleSolid:  solid;
+$borderStyleDotted: dotted;
+$borderStyleDashed: dashed;
+
+// width
+$borderDefaultWidth: 1px;
+$borderLargeWidth:   2px;
+$borderHugeWidth:    3px;
+
+
+//============================================================
+// table
+//============================================================
+// border
+$tableBorder: #ccc;
+$tableFormBorder: #f2f2f2;
+
+// background
+$tableStripedColor: #cee;
+
+//============================================================
+// button
+//============================================================
+// width
+$btnWidth: 100;
+$btnWidthHuge:   $btnWidth * 2;
+$btnWidthLarge:  $btnWidth * 1.5;
+$btnWidthMedium: $btnWidth;
+$btnWidthSmall:  $btnWidth / 2;
+$btnWidthUnit: px;
+
+//============================================================
+// form
+//============================================================
+// border
+$formBorder: #ccc;
+
+// width
+$formWidthName1:      200;
+$formWidthName2:      100;
+$formWidthEmail:      300;
+$formWidthTell1:      200;
+$formWidthTell3:      50;
+$formWidthZip:        50;
+$formWidthAge:        50;
+$formWidthAddress:    400;
+$formWidthPassword:   200;
+$formWidthPassPhrase: 200;
+$formWidthSearch:     100;
+$formWidthComment:    400;
+$formHeightComment:   80;
+$formWidthUnit: px;
