@@ -1,0 +1,40 @@
+$radioIndent: 25px;
+.form_radio {
+  cursor: pointer;
+  padding-left: $radioIndent;
+  @include inline-block();
+  input {
+    margin-right: 5px;
+    margin-left: -#{$radioIndent};
+    position: relative;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background: #FFFFFF;
+    border: 1px solid #999;
+    vertical-align: top;
+    @include border-radius(24px);
+    @include box-shadow(inset -4px -4px 10px #ccc, 0 1px 0 #ddd);
+    @include appearance(button);
+    &:checked {
+      border-color: #666bb1;
+      @include box-shadow(inset 4px 4px 10px #9bc3f7, 0 1px 0 #ddd);
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 10px;
+        height: 10px;
+        background: #091831;
+        @include border-radius(12px);
+        @include background-image(linear-gradient(top left,#999,#091831));
+      }
+    }
+  }
+  .item_name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

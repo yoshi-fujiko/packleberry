@@ -1,0 +1,4 @@
+.form_error_msg {
+  @include textError();
+  margin-bottom: 10px;
+}

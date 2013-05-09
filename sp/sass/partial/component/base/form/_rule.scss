@@ -1,0 +1,83 @@
+input, textarea, select {
+  &.name1 {
+    width: #{$formWidthName1}#{$formWidthUnit};
+  }
+  
+  &.name2 {
+    width: #{$formWidthName2}#{$formWidthUnit};
+  }
+  
+  &.email {
+    width: #{$formWidthEmail}#{$formWidthUnit};
+  }
+  
+  &.tel1 {
+    width: #{$formWidthTell1}#{$formWidthUnit};
+  }
+  
+  &.tel3 {
+    width: #{$formWidthTell3}#{$formWidthUnit};
+  }
+  
+  &.zip {
+    width: #{$formWidthZip}#{$formWidthUnit};
+  }
+  
+  &.age {
+    width: #{$formWidthAge}#{$formWidthUnit};
+  }
+  
+  &.search {
+    width: #{$formWidthSearch}#{$formWidthUnit};
+  }
+  
+  &.address {
+    width: #{$formWidthAddress}#{$formWidthUnit};
+  }
+  
+  &.password {
+    width: #{$formWidthPassword}#{$formWidthUnit};
+  }
+  
+  &.pass_phrase {
+    width: #{$formWidthPassPhrase}#{$formWidthUnit};
+  }
+  
+  &.comment {
+    width: #{$formWidthComment}#{$formWidthUnit};
+    height: #{$formHeightComment}#{$formWidthUnit};
+  }
+}
+
+.form_group {
+  .horizone {
+    @include inline-block;
+    vertical-align: middle;
+    &.near {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &.far {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .vertical {
+    &.near {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &.far {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

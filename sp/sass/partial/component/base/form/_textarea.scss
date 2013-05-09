@@ -1,0 +1,7 @@
+.form_textarea {
+  @include paddingForm();
+  @include inline-block();
+  @include formBorder();
+  @include border-radius(5px);
+  @include bgForm();
+}
