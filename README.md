@@ -5,6 +5,9 @@
 HTML/SASSテンプレートです
 
 ## example
+[PC用](./pc/)
+
+[SP用](./SP/)
 
 ## SPEC
 * Sass 3.2.1 (Media Mark)
