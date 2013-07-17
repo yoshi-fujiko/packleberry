@@ -1,0 +1,5 @@
+.btn_disabled {
+  @extend .btn;
+	@include textDisabled;
+	@include background-image(linear-gradient(top, #fff 0%, $bgDisabledColor 100%));
+}

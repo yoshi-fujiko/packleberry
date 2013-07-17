@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>SPRINGBOARD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="description" content="SPRINGBOARD: html base template">
+  <meta name="keywords" content="SPRINGBOARD, sass, compass">
+  <script src="./js/dev.js"></script>
+  <script type="text/javascript">
+// 以下css
+  (function(){
+    DEV.changeStylesheet({
+      path: "./css/",
+      file: ["base", "docs"],
+      pure: true
+    });
+  })();
+  </script>
+</head>
+<body>
+
+<div class="docs_container">
+
+  <header class="docs_header">
+    <hgroup class="docs_hgroup">
+      <h1 class="heading1_lv1">SPRINGBOARD</h1>
+      <nav class="docs_nav">
+        <ul class="unstyled global_nav"><!--
+          --><li><a href="./index.html">HOME</a></li><!--
+          --><li><a href="./kit/scaffolding.html">Scaffolding</a></li><!--
+          --><li><a href="./kit/component.html">Component</a></li><!--
+          --><li><a href="./kit/skin.html">Skin</a></li><!--
+          --><li><a href="./kit/property.html">Property</a></li><!--
+        --></ul>
+      </nav>
+    </hgroup>
+  </header>
+
+  <section class="docs_top_section">
+    <h2 class="heading2_lv2">What's this</h2>
+    <ul>
+      <li>PCサイト用のHTML / CSS(SASS)のフレームワークです</li>
+      <li>主に新規サイト制作する際に使用します</li>
+      <li>オブジェクト指向に基づいて設計しています（一応）</li>
+    </ul>
+  </section>
+  <hr class="separator_dashed">
+
+  <!--section class="docs_top_section">
+    <h2 class="heading2_lv2">File structure</h2>
+
+  </section>
+  <hr class="separator_dashed"-->
+
+  <section class="docs_top_section">
+  <h2 class="heading2_lv2">Document Section</h2>
+    <div class="row_solid">
+      <div class="grid span3">
+        <a href="kit/scaffolding.html" class="docs_top_gate">
+          <div class="heading2_lv2">Scaffoling</div>
+          <div class="txt_sentence">ページを構成する基本レイアウト<br>ヘッダー・フッター・カラム・グリッド</div>
+        </a>
+      </div>
+      <div class="grid span3">
+        <a href="kit/component.html" class="docs_top_gate">
+          <div class="heading2_lv2">Component</div>
+          <div class="txt_sentence">テーブル、リストなどレイアウト中に配置して使用する部品</div>
+        </a>
+      </div>
+      <div class="grid span3">
+        <a href="kit/skin.html" class="docs_top_gate">
+          <div class="heading2_lv2">Skin</div>
+          <div class="txt_sentence">カラー、マージンなどコンポーネントを拡張する設定</div>
+        </a>
+      </div>
+      <div class="grid span3">
+        <a href="kit/property.html" class="docs_top_gate">
+          <div class="heading2_lv2">Property</div>
+          <div class="txt_sentence">カラー、ボーダーなどコンポーネントに設定する特性を定義
+            <ul class="unstyled">
+              <li class="txt_notes_lv1">※特性の定義であるため読み取り専用</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <hr class="separator_dashed">
+  
+  <section class="docs_top_section">
+    <h2 class="heading2_lv2">Issue</h2>
+    <ul>
+      <li>コンポーネントの各マージンをどうするか？</li>
+      <li>テキストリンクの種類についての定義をどうするか？</li>
+      <li>Propertyで定義している「text,background,border」の他、グラデーションなど必要なのか？</li>
+    </ul>
+  </section>
+
+  <footer class="footer" id="docs_footer">
+    <p class="ver">version α</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+$docsBorderColor: #dedede;
+$docsTextColor: #333;
+$docsPointColor: #f69;
+
+// docs container
+.docs_container {
+  width: 960px;
+  margin: auto;
+  @media screen and (max-width: 639px) {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.docs_top_section {
+  margin-top: 20px;
+}
+
+.docs_top_gate {
+  color: $docsTextColor;
+  text-decoration: none;
+  border: solid 1px $docsBorderColor;
+  min-height: 120px;
+  display: block;
+  @include box-shadow($docsBorderColor 0 1px 2px inset);
+  @include border-radius();
+  .heading2_lv2 {
+    color: #666;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  .txt_sentence {
+    padding: 5px 10px;
+  }
+}
+
+// example
+#docs_section {
+  .docs_heading1 {
+    border-bottom: 1px solid $docsBorderColor;
+    padding-bottom: 10px;
+  }
+  
+  .docs_heading2 {
+    margin: 35px 0 10px;
+  }
+  
+  .docs_explan {
+    margin-bottom: 10px;
+  }
+  
+  .example {
+    border:1px solid $docsBorderColor;
+    border-bottom: 0;
+    padding: 40px 10px 15px 10px;
+    position: relative;
+    @include border-radius(5px 5px 0 0);
+    &:after {
+      content: "example";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #aaa;
+      display: block;
+      padding: 3px 5px;
+      background: #ececec;
+      border: solid $docsBorderColor;
+      border-width: 0 1px 1px 0;
+      @include border-radius(0 0 5px 0);
+    }
+    .img_float {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (max-width: 639px) {
+      border-bottom: solid 1px $docsBorderColor;
+      @include border-bottom-radius(5px);
+    }
+  }
+  
+  .gist {
+    display: block;
+    @media screen and (max-width: 639px) {
+      display: none;
+    }
+  }
+  
+  .sub_component_sass {
+    color: #aaa;
+    padding: 3px 5px;
+    margin-top: -0.8em;
+    background: #ececec;
+    border: solid $docsBorderColor;
+    border-width: 1px 1px 0 1px;
+    @media screen and (max-width: 639px) {
+      display: none;
+    }
+  }
+}
+
+
+// header
+.docs_header {
+  height: 110px;
+  @media screen and (max-width: 639px) {
+    height: 70px;
+  }
+  position: relative;
+  z-index: 100;
+  .docs_hgroup {
+    background: #fff;
+    width: 960px;
+    position: fixed;
+    @media screen and (max-width: 639px) {
+      width: 100%;
+      position: static;
+    }
+    .heading1_lv1 {
+      font-size: 30px;
+      padding: 10px 0;
+    }
+  }
+}
+
+// docs_nav
+.docs_nav {
+  // global
+  .global_nav {
+    border: solid 1px $docsBorderColor;
+    background: #252525;
+    @include border-radius(5px);
+    @include box-shadow(0 1px 2px rgba(0,0,0,0.1));
+    li {
+      width: #{floor(954/5)}px;
+      @include inline-block();
+      border-right: solid 1px $docsBorderColor;
+      &:last-child {
+        border-right: none; 
+      }
+      a {
+        color: #E8E8E8;
+        padding: 5px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      @media screen and (max-width: 639px) {
+        display: none;
+      }
+    }
+  }
+}
+
+// property
+.docs_property {
+  width: 50%;
+  min-height: #{$textDefaultSize + 5}#{px};
+  padding: 5px 10px;
+  // normal
+  &.normal_text { color: $textDefaultColor; }
+  &.normal_bg { background: $bgDefaultColor; }
+  &.normal_border { border: solid 1px $borderDefaultColor; }
+  // error
+  &.error_text { color: $textErrorColor; }
+  &.error_bg { background: $bgErrorColor; }
+  &.error_border { border: solid 1px $borderErrorColor; }
+  // warning
+  &.warning_text { color: $textWarningColor; }
+  &.warning_bg { background: $bgWarningColor; }
+  &.warning_border { border: solid 1px $borderWarningColor; }
+  // info
+  &.info_text { color: $textInfoColor; }
+  &.info_bg { background: $bgInfoColor; }
+  &.info_border { border: solid 1px $borderInfoColor; }
+  // notes
+  &.notes_text { color: $textNotesColor; }
+  &.notes_bg { background: $bgNotesColor; }
+  &.notes_border { border: solid 1px $borderNotesColor; }
+  // disabled
+  &.disabled_text { color: $textDisabledColor; }
+  &.disabled_bg { background: $bgDisabledColor; }
+  &.disabled_border { border: solid 1px $borderDisabledColor; }
+}
+
+#docs_footer {
+  color: #aaa;
+  padding: 5px;
+  text-align: right;
+}
+
+// dummy box
+.dmy_box {
+  @include border-radius();
+  text-align: center;
+  padding: 5px;
+  background: #6cf;
+}
+
+.dmy_h100 {
+  height: 100px;
+}

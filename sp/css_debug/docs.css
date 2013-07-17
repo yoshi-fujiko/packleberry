@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* line 6, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_container {
+  width: 960px;
+  margin: auto;
+}
+@media screen and (max-width: 639px) {
+  /* line 6, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+  .docs_container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/* line 15, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_top_section {
+  margin-top: 20px;
+}
+
+/* line 19, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_top_gate {
+  color: #333333;
+  text-decoration: none;
+  border: solid 1px #dedede;
+  min-height: 120px;
+  display: block;
+  -webkit-box-shadow: #dedede 0 1px 2px inset;
+  -moz-box-shadow: #dedede 0 1px 2px inset;
+  box-shadow: #dedede 0 1px 2px inset;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 27, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_top_gate .heading2_lv2 {
+  color: #666;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+/* line 33, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_top_gate .txt_sentence {
+  padding: 5px 10px;
+}
+
+/* line 40, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .docs_heading1 {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 10px;
+}
+/* line 45, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .docs_heading2 {
+  margin: 35px 0 10px;
+}
+/* line 49, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .docs_explan {
+  margin-bottom: 10px;
+}
+/* line 53, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .example {
+  border: 1px solid #dedede;
+  border-bottom: 0;
+  padding: 40px 10px 15px 10px;
+  position: relative;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+/* line 59, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .example:after {
+  content: "example";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #aaa;
+  display: block;
+  padding: 3px 5px;
+  background: #ececec;
+  border: solid #dedede;
+  border-width: 0 1px 1px 0;
+  -webkit-border-radius: 0 0 5px 0;
+  -moz-border-radius: 0 0 5px 0;
+  -ms-border-radius: 0 0 5px 0;
+  -o-border-radius: 0 0 5px 0;
+  border-radius: 0 0 5px 0;
+}
+/* line 72, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .example .img_float {
+  margin-bottom: 20px;
+}
+/* line 74, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .example .img_float:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 639px) {
+  /* line 53, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+  #docs_section .example {
+    border-bottom: solid 1px #dedede;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+/* line 84, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .gist {
+  display: block;
+}
+@media screen and (max-width: 639px) {
+  /* line 84, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+  #docs_section .gist {
+    display: none;
+  }
+}
+/* line 91, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_section .sub_component_sass {
+  color: #aaa;
+  padding: 3px 5px;
+  margin-top: -0.8em;
+  background: #ececec;
+  border: solid #dedede;
+  border-width: 1px 1px 0 1px;
+}
+@media screen and (max-width: 639px) {
+  /* line 91, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+  #docs_section .sub_component_sass {
+    display: none;
+  }
+}
+
+/* line 106, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_header {
+  height: 110px;
+  position: relative;
+  z-index: 100;
+}
+@media screen and (max-width: 639px) {
+  /* line 106, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+  .docs_header {
+    height: 70px;
+  }
+}
+/* line 113, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_header .docs_hgroup {
+  background: #fff;
+  width: 960px;
+  position: fixed;
+}
+@media screen and (max-width: 639px) {
+  /* line 113, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+  .docs_header .docs_hgroup {
+    width: 100%;
+    position: static;
+  }
+}
+/* line 121, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_header .docs_hgroup .heading1_lv1 {
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+/* line 131, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_nav .global_nav {
+  border: solid 1px #dedede;
+  background: #252525;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 136, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_nav .global_nav li {
+  width: 190px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  border-right: solid 1px #dedede;
+}
+/* line 140, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_nav .global_nav li:last-child {
+  border-right: none;
+}
+/* line 143, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_nav .global_nav li a {
+  color: #E8E8E8;
+  padding: 5px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media screen and (max-width: 639px) {
+  /* line 136, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+  .docs_nav .global_nav li {
+    display: none;
+  }
+}
+
+/* line 159, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property {
+  width: 50%;
+  min-height: 19px;
+  padding: 5px 10px;
+}
+/* line 164, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.normal_text {
+  color: #333333;
+}
+/* line 165, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.normal_bg {
+  background: white;
+}
+/* line 166, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.normal_border {
+  border: solid 1px #c4c5c5;
+}
+/* line 168, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.error_text {
+  color: #dd2211;
+}
+/* line 169, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.error_bg {
+  background: #ffeeee;
+}
+/* line 170, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.error_border {
+  border: solid 1px #ff5757;
+}
+/* line 172, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.warning_text {
+  color: #ef8f35;
+}
+/* line 173, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.warning_bg {
+  background: #fdfde9;
+}
+/* line 174, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.warning_border {
+  border: solid 1px #ffa836;
+}
+/* line 176, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.info_text {
+  color: #0055aa;
+}
+/* line 177, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.info_bg {
+  background: #d3f3f3;
+}
+/* line 178, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.info_border {
+  border: solid 1px #8db8d3;
+}
+/* line 180, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.notes_text {
+  color: #777777;
+}
+/* line 181, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.notes_bg {
+  background: #efefef;
+}
+/* line 182, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.notes_border {
+  border: solid 1px #efefef;
+}
+/* line 184, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.disabled_text {
+  color: #cccccc;
+}
+/* line 185, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.disabled_bg {
+  background: #f2f2f2;
+}
+/* line 186, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.docs_property.disabled_border {
+  border: solid 1px #efefef;
+}
+
+/* line 189, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+#docs_footer {
+  color: #aaa;
+  padding: 5px;
+  text-align: right;
+}
+
+/* line 196, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.dmy_box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  background: #6cf;
+}
+
+/* line 203, /Users/yoshihiro.fujita/work/packleberry/sp/sass/partial/component/extension/docs/_docs.scss */
+.dmy_h100 {
+  height: 100px;
+}

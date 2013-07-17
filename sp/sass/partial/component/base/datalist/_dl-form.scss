@@ -1,0 +1,20 @@
+.dl_form {
+  margin-bottom: 10px;
+  padding: 10px 10px 0 10px;
+  &:last-child, :only-child {
+    margin-bottom: 0;
+  }
+  .form_title {
+    font-weight: bold;
+  }
+  .form_data {
+    margin: 10px 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &.form_error {
+    @include bgError;
+    padding-bottom: 10px;
+  }
+}

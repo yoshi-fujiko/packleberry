@@ -1,0 +1,5 @@
+.separator_dotted {
+  @include borderDefault(1px, 0, 0, 0, dotted);
+  @include marginTop;
+  @include marginBottom;
+}

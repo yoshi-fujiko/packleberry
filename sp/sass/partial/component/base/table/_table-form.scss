@@ -1,0 +1,12 @@
+.table_form {
+  width: 100%;
+  @include tableFormBorder(1px, 0, 0, 1px);
+  th {
+    @include textBold();
+    background-color: #dfdfdf;
+  }
+  th, td {
+    @include tableFormBorder(0, 1px, 1px, 0);
+    padding: 20px 20px;
+  }
+}

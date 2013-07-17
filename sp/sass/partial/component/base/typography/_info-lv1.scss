@@ -1,0 +1,4 @@
+.txt_info_lv1 {
+  @extend .txt_normal_lv1;
+  @include textInfo;
+}
