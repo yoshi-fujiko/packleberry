@@ -44,7 +44,7 @@ input, textarea, select {
   }
   
   &.comment {
-    width: #{$formWidthComment}#{$formWidthUnit};
+    width: 100%;
     height: #{$formHeightComment}#{$formWidthUnit};
   }
 }
@@ -54,13 +54,13 @@ input, textarea, select {
     @include inline-block;
     vertical-align: middle;
     &.near {
-      margin-right: 10px;
+      margin-right: 5px;
       &:last-child {
         margin-right: 0;
       }
     }
     &.far {
-      margin-right: 20px;
+      margin-right: 10px;
       &:last-child {
         margin-right: 0;
       }
@@ -68,13 +68,13 @@ input, textarea, select {
   }
   .vertical {
     &.near {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       &:last-child {
         margin-bottom: 0;
       }
     }
     &.far {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       &:last-child {
         margin-bottom: 0;
       }
