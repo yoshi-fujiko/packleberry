@@ -1,0 +1,26 @@
+//============================================================
+// compass
+//============================================================
+@import "compass/css3";
+@import "compass/support";
+@import "compass/utilities";
+
+//============================================================
+// partial
+//============================================================
+// setting
+@import "partial/setting/variable/all";
+@import "partial/setting/initialization/all";
+
+// mixin
+@import "partial/mixin/all";
+
+// scaffolding
+@import "partial/scaffolding/layout-outline/all";
+@import "partial/scaffolding/grid/all";
+
+// compornent
+@import "partial/component/base/all";
+
+// skin
+@import "partial/skin/all";

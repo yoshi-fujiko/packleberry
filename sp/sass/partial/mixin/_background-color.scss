@@ -1,0 +1,27 @@
+@mixin bgDefault {
+  background-color: $bgDefaultColor;
+}
+
+@mixin bgWarning {
+  background-color: $bgWarningColor;
+}
+
+@mixin bgNote {
+  background-color: $bgNotesColor;
+}
+
+@mixin bgError {
+  background-color: $bgErrorColor;
+}
+
+@mixin bgInfo {
+  background-color: $bgInfoColor;
+}
+
+@mixin bgDisable {
+  background-color: $bgDisabledColor;
+}
+
+@mixin bgWhite {
+  background-color: $bgWhiteColor;
+}

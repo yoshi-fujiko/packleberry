@@ -1,0 +1,13 @@
+.necessity_label {
+	display: block;
+	&:after {
+		content: "必須";
+		display: inline-block;
+		color: #fff;
+		margin-left: 5px;
+		padding: 2px 3px;
+		background-color: #f00;
+		@include textSmall;
+		@include border-radius(3px);
+	}
+}

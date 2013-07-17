@@ -1,0 +1,99 @@
+// border
+@mixin borderDefault (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderDefaultColor $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin borderWarning (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderWarningColor $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin borderNote (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderNotesColor $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin borderError (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderErrorColor $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin borderInfo (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderInfoColor $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin borderDisabled (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $borderDisabledColor $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin tableBorder (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $tableBorder $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin tableFormBorder (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $tableFormBorder $type;
+    border-width: $top $right $bottom $left;
+}
+
+@mixin formBorder (
+    $top:$borderDefaultWidth,
+    $right:$borderDefaultWidth,
+    $bottom:$borderDefaultWidth,
+    $left:$borderDefaultWidth,
+    $type:$borderStyleSolid
+  ) {
+    border: $formBorder $type;
+    border-width: $top $right $bottom $left;
+}

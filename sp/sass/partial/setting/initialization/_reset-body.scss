@@ -1,0 +1,5 @@
+@mixin reset-body {
+  line-height: 1.25;
+  color: $textDefaultColor;
+  background: $bgDefaultColor;
+}
