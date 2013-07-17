@@ -62,8 +62,7 @@ $textNoramlWeight: normal;
 $textBoldWeight:   bold;
 
 // family
-//$textFontFamily: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
-$textFontFamily: sans-serif;
+$textFontFamily: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 
 // line-heihgt
 $textLineHeight: $textDefaultSize * 0.105;
@@ -107,7 +106,7 @@ $tableStripedColor: #cee;
 // button
 //============================================================
 // width
-$btnWidth: 120;
+$btnWidth: 100;
 $btnWidthHuge:   $btnWidth * 2;
 $btnWidthLarge:  $btnWidth * 1.5;
 $btnWidthMedium: $btnWidth;
@@ -126,12 +125,12 @@ $formWidthName2:      100;
 $formWidthEmail:      300;
 $formWidthTell1:      200;
 $formWidthTell3:      50;
-$formWidthZip:        100;
+$formWidthZip:        50;
 $formWidthAge:        50;
 $formWidthAddress:    400;
 $formWidthPassword:   200;
 $formWidthPassPhrase: 200;
 $formWidthSearch:     100;
 $formWidthComment:    400;
-$formHeightComment:   150;
+$formHeightComment:   80;
 $formWidthUnit: px;
