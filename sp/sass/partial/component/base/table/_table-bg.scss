@@ -1,0 +1,38 @@
+tr.striped td {
+  background-color: $tableStripedColor;
+}
+
+tr.cell_warning th,
+tr.cell_warning td,
+th.cell_warning,
+td.cell_warning {
+  @include bgWarning;
+}
+
+tr.cell_notes th,
+tr.cell_notes td,
+th.cell_notes,
+td.cell_notes {
+  @include bgNote;
+}
+
+tr.cell_error th,
+tr.cell_error td,
+th.cell_error,
+td.cell_error {
+  @include bgError;
+}
+
+tr.cell_info th,
+tr.cell_info td,
+th.cell_info,
+td.cell_info {
+  @include bgInfo;
+}
+
+tr.cell_white th,
+tr.cell_white td,
+th.cell_white,
+td.cell_white {
+  @include bgWhite;
+}

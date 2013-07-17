@@ -1,0 +1,19 @@
+.btn_huge {
+	width: #{$btnWidthHuge}#{$btnWidthUnit};
+}
+
+.btn_large {
+	width: #{$btnWidthLarge}#{$btnWidthUnit};
+}
+
+.btn_medium {
+	width: #{$btnWidthMedium}#{$btnWidthUnit};
+}
+
+.btn_small {
+	width: #{$btnWidthSmall}#{$btnWidthUnit};
+}
+
+.btn_liquid {
+  width: 100%;
+}

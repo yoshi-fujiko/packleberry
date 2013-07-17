@@ -1,0 +1,4 @@
+.txt_error_lv3 {
+  @extend .txt_normal_lv3;
+  @include textError;
+}

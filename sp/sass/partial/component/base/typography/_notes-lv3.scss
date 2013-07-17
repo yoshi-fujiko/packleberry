@@ -1,0 +1,4 @@
+.txt_notes_lv3 {
+  @extend .txt_normal_lv3;
+  @include textNotes;
+}

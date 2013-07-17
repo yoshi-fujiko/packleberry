@@ -1,0 +1,14 @@
+.table_horizon {
+  width: 100%;
+  th {
+    @include textBold();
+  }
+  th, td {
+    @include tableBorder(0, 0, 1px, 0);
+    padding: 8px 4px;
+  }
+  tr:last-child th,
+  tr:last-child td {
+    @include tableBorder(0, 0, 0, 0);
+  }
+}

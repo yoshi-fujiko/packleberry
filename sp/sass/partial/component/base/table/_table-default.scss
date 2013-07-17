@@ -1,0 +1,11 @@
+.table {
+  width: 100%;
+  @include tableBorder(1px, 0, 0, 1px);
+  th {
+    @include textBold();
+  }
+  th, td {
+    @include tableBorder(0, 1px, 1px, 0);
+    padding: 8px 4px;
+  }
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="description" content="SPRINGBOARD: html base template">
+  <meta name="keywords" content="SPRINGBOARD, sass, compass">
+  <title>SPRINGBOARD: html base template</title>
+  <script src="../js/dev.js"></script>
+  <script>
+// 以下css
+  (function(){
+    DEV.changeStylesheet({
+      path: "../css/",
+      file: ["base","docs"],
+      pure: true
+    });
+  })();
+  </script>  
+</head>
+<body>
+
+<div class="docs_container">
+
+  <header class="docs_header">
+    <hgroup class="docs_hgroup">
+      <h1 class="heading1_lv1">SPRINGBOARD</h1>
+      <nav class="docs_nav">
+        <ul class="unstyled global_nav"><!--
+          --><li><a href="../index.html">HOME</a></li><!--
+          --><li><a href="scaffolding.html">Scaffolding</a></li><!--
+          --><li><a href="component.html">Component</a></li><!--
+          --><li><a href="skin.html">Skin</a></li><!--
+          --><li><a href="property.html">Property</a></li><!--
+        --></ul>
+      </nav>
+    </hgroup>
+  </header>
+
+  <div class="wrapper">
+  	<div class="container">
+
+  		<section id="docs_section">
+  		  <h1 class="heading1_lv2 docs_heading1">Component</h1>
+
+  		  <h2 class="heading2_lv2 docs_heading2" id="heading">heading</h2>
+  		  <p class="txt_sentence docs_explan">h1〜H6のスタイルを定義します。<br>
+    		  H1,H2,H3はLevel1,Level2の2種類用意しています。</p>
+  		  <div class="example">
+    		  <h1 class="heading1_lv1">heading1-lv1</h1>
+    		  <h1 class="heading1_lv2">heading1-lv2</h1>
+    		  <h2 class="heading2_lv1">heading2-lv1</h2>
+    		  <h2 class="heading2_lv2">heading2-lv2</h2>
+    		  <h3 class="heading3_lv1">heading3-lv1</h3>
+    		  <h3 class="heading3_lv2">heading3-lv2</h3>
+    		  <h3 class="heading4_lv1">heading4-lv1</h4>
+    		  <h3 class="heading5_lv1">heading5-lv1</h5>
+    		  <h3 class="heading6_lv1">heading6-lv1</h6>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/7fbe451b287b9bc5dcf4.js"></script>
+  		  
+  		  <h2 class="heading2_lv2 docs_heading2" id="default_text">default text</h2>
+  		  <p class="txt_sentence docs_explan">通常テキストです。</p>
+  		  <div class="example">
+    		  <p>僕が生まれたのは1977年です。社会のことや世の中のことが理解でき始めた中学生や高校生の時代を、日本の一つの成長の時代が終わり、横ばいと下り坂を繰り返す1990年代に過ごしました。そういう意味では、成長する時代を体験していない、日々縮小する日本しか知らない世代の始まりなのかもしれません。 そういう1990年代に入り、時代が世の中の雰囲気を変えていく中で、当時の僕には、それに大きな違和感を感じました。</p>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/727204a5bcd97d6f0293.js"></script>
+  		  
+  		  <h2 class="heading2_lv2 docs_heading2" id="sentence_text">sentence text</h2>
+  		  <p class="txt_sentence docs_explan">行間を1.3em空けた通常テキストです。</p>
+  		  <div class="example">
+    		  <p class="txt_sentence">僕が生まれたのは1977年です。社会のことや世の中のことが理解でき始めた中学生や高校生の時代を、日本の一つの成長の時代が終わり、横ばいと下り坂を繰り返す1990年代に過ごしました。そういう意味では、成長する時代を体験していない、日々縮小する日本しか知らない世代の始まりなのかもしれません。 そういう1990年代に入り、時代が世の中の雰囲気を変えていく中で、当時の僕には、それに大きな違和感を感じました。</p>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/8bd983c8746b4bbb58bb.js"></script>
+  		  
+  		  <h2 class="heading2_lv2 docs_heading2" id="other_text">other text</h2>
+  		  <p class="txt_sentence docs_explan">テキストリンク、太字、各property毎の文字サイズ違いです。</p>
+  		  <div class="example">
+    		  <p><a href="javascript:void(0);">テキストリンク</a></p>
+    		  <hr class="separator_dotted">
+    		  <p class="txt_bold">太文字</p>
+    		  <hr class="separator_dotted">
+    		  <p class="txt_normal_lv3">ノーマル：文字サイズ：大</p>
+    		  <p class="txt_normal_lv2">ノーマル：文字サイズ：中</p>
+    		  <p class="txt_normal_lv1">ノーマル：文字サイズ：小</p>
+    		  <hr class="separator_dotted">
+    		  <p class="txt_error_lv3">エラー：文字サイズ：大</p>
+    		  <p class="txt_error_lv2">エラー：文字サイズ：中</p>
+    		  <p class="txt_error_lv1">エラー：文字サイズ：小</p>
+    		  <hr class="separator_dotted">
+    		  <p class="txt_warning_lv3">注意喚起：文字サイズ：大</p>
+    		  <p class="txt_warning_lv2">注意喚起：文字サイズ：中</p>
+    		  <p class="txt_warning_lv1">注意喚起：文字サイズ：小</p>
+    		  <hr class="separator_dotted">
+    		  <p class="txt_info_lv3">お知らせ：文字サイズ：大</p>
+    		  <p class="txt_info_lv2">お知らせ：文字サイズ：中</p>
+    		  <p class="txt_info_lv1">お知らせ：文字サイズ：小</p>
+    		  <hr class="separator_dotted">
+    		  <p class="txt_notes_lv3">補助：文字サイズ：大</p>
+    		  <p class="txt_notes_lv2">補助：文字サイズ：中</p>
+    		  <p class="txt_notes_lv1">補助：文字サイズ：小</p>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/6e8cbf2b2c739d67f253.js"></script>
+  		  
+  		  <h2 class="heading2_lv2 docs_heading2" id="table">table</h2>
+  		  <p class="txt_sentence docs_explan">通常のテーブルです。</p>
+  		  <div class="example">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>見出し</th>
+                <th>見出し</th>
+                <th>見出し</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+            </tbody>
+          </table>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/5ddc9326c055533c5499.js"></script>
+  		  
+  		  <p class="txt_sentence docs_explan">横罫線のみのテーブルです。</p>
+  		  <div class="example">
+          <table class="table_horizon">
+            <thead>
+              <tr>
+                <th>見出し</th>
+                <th>見出し</th>
+                <th>見出し</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+            </tbody>
+          </table>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/7831f95460421af8de34.js"></script>
+  		  
+  		  <p class="txt_sentence docs_explan">縦罫線のみのテーブルです。</p>
+  		  <div class="example">
+          <table class="table_vertical">
+            <thead>
+              <tr>
+                <th>見出し</th>
+                <th>見出し</th>
+                <th>見出し</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="striped">
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr class="striped">
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+            </tbody>
+          </table>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/3fbb2bb74100b01d5a74.js"></script>
+
+  		  <p class="txt_sentence docs_explan">各propertyに基づいたテーブルの背景色です。</p>
+  		  <div class="example">
+          <table class="table">
+            <tbody>
+              <tr class="cell_info">
+                <td>お知らせ</td>
+                <td>お知らせ</td>
+              </tr>
+              <tr>
+                <td class="cell_warning" colspan="2">注意喚起</td>
+              </tr>
+              <tr>
+                <td class="cell_error" colspan="2">エラー</td>
+              </tr>
+              <tr>
+                <td class="cell_notes" colspan="2">補助</td>
+              </tr>
+            </tbody>
+          </table>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/0f482c32d454f5f9ad11.js"></script>
+
+  		  <h2 class="heading2_lv2 docs_heading2" id="img_float">image float</h2>
+  		  <p class="txt_sentence docs_explan">画像に対してテキストをフロートします。</p>
+  		  <div class="example">
+  		    <div class="img_float">
+  		      <div class="thumb_img_right"><img src="http://pichon.dev.gree.jp/img/size/72x72.png"></div>
+  		      <div class="thumb_article">僕が生まれたのは1977年です。社会のことや世の中のことが理解でき始めた中学生や高校生の時代を、日本の一つの成長の時代が終わり、横ばいと下り坂を繰り返す1990年代に過ごしました。そういう意味では、成長する時代を体験していない、日々縮小する日本しか知らない世代の始まりなのかもしれません。 そういう1990年代に入り、時代が世の中の雰囲気を変えていく中で、当時の僕には、それに大きな違和感を感じました。</div>
+  		    </div>
+  		    <div class="img_float">
+  		      <div class="thumb_img_left"><img src="http://pichon.dev.gree.jp/img/size/72x72.png"></div>
+  		      <div class="thumb_article">僕が生まれたのは1977年です。社会のことや世の中のことが理解でき始めた中学生や高校生の時代を、日本の一つの成長の時代が終わり、横ばいと下り坂を繰り返す1990年代に過ごしました。そういう意味では、成長する時代を体験していない、日々縮小する日本しか知らない世代の始まりなのかもしれません。 そういう1990年代に入り、時代が世の中の雰囲気を変えていく中で、当時の僕には、それに大きな違和感を感じました。</div>
+  		    </div>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/0f482c32d454f5f9ad11.js"></script>
+
+  		  <h2 class="heading2_lv2 docs_heading2" id="list">list</h2>
+  		  <p class="txt_sentence docs_explan">
+  		    <span class="info">class="unstyled"</span>をつけることによってul, olを初期化します。
+  		  </p>
+  		  <div class="example">
+          <ul class="list_normal">
+            <li>ノーマルリスト：ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
+            <li>ノーマルリスト：ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
+            <li>ノーマル：ダミーテキストダミーテキスト</li>
+            <li>ノーマル：ダミーテキストダミーテキスト</li>
+          </ul>
+          <hr class="separator_dotted">
+          <ol class="list_normal">
+            <li>オーダーリスト：ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
+            <li>オーダーリスト：ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
+            <li>オーダーリスト：ダミーテキストダミーテキスト</li>
+            <li>オーダーリスト：ダミーテキストダミーテキスト</li>
+          </ol>
+          <hr class="separator_dotted">
+          <ul class="unstyled list_indent">
+            <li>※インデント付きリスト：ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
+            <li>※インデント付きリスト：ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
+            <li>※インデント付きリスト：ダミーテキストダミーテキスト</li>
+            <li>※インデント付きリスト：ダミーテキストダミーテキスト</li>
+          </ul>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/a6308ddc9363f916e5e5.js"></script>
+  		  
+  		  <h2 class="heading2_lv2 docs_heading2" id="form">form</h2>
+  		  <p class="txt_sentence docs_explan">各フォームパーツです。</p>
+  		  <div class="example">
+          <dl class="dl_form">
+            <dt class="form_title">text</dt>
+            <dd class="form_data"><input type="text" class="form_text"></dd>
+          </dl>
+          <dl class="dl_form">
+            <dt class="form_title">textarea</dt>
+            <dd class="form_data"><textarea class="form_textarea"></textarea></dd>
+          </dl>
+          <dl class="dl_form">
+            <dt class="form_title">password</dt>
+            <dd class="form_data"><input type="password" class="form_text"></dd>
+          </dl>
+          <dl class="dl_form">
+            <dt class="form_title">checkbox</dt>
+            <dd class="form_data"><label class="form_checkbox"><input type="checkbox">checkbox</label></dd>
+          </dl>
+          <dl class="dl_form">
+            <dt class="form_title">radio</dt>
+            <dd class="form_data"><label class="form_radio"><input type="radio">radio</label></dd>
+          </dl>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/71b2ebdcb46ef13a16aa.js"></script>
+
+  		  <p class="txt_sentence docs_explan">入力フォーム全部入り（エラー、注意分含む）です。</p>
+  		  <div class="example">
+          <form>
+            <dl class="dl_form">
+              <dt class="form_title"><span class="necessity_label">お名前</span></dt>
+              <dd class="form_data">
+                <input type="text" class="form_text" placeholder="姓">
+              </dd>
+              <dd class="form_data">
+                <input type="text" class="form_text" placeholder="名">
+                <ul class="unstyled">
+                  <li class="form_notes_msg">例：栗井</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl class="dl_form form_error">
+              <dt class="form_title"><span class="necessity_label">カナ</span></dt>
+              <dd class="form_data">
+                <p class="form_error_msg">カナ(姓)を入力してください。</p>
+                <input type="text" class="form_text" placeholder="セイ">
+              </dd>
+              <dd class="form_data">
+                <input type="text" class="form_text" placeholder="メイ">
+                <ul class="unstyled">
+                  <li class="form_notes_msg">例：グリイ</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">ニックネーム</dt>
+              <dd class="form_data">
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">メールアドレス</dt>
+              <dd class="form_data">
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form form_error">
+              <dt class="form_title">パスワード</dt>
+              <dd class="form_data">
+                <p class="form_error_msg">パスワードを入力してください。</p>
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">パスワード（確認）</dt>
+              <dd class="form_data">
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title"><span class="necessity_label">秘密の合い言葉</span></dt>
+              <dd class="form_data">
+                <select class="form_select">
+                  <option>パスフレーズ</option>
+                  <option>卒業した学校名</option>
+                  <option>ペットの名前</option>
+                  <option>好きな果物</option>
+                  <option>今まで食べた食パンの枚数</option>
+                </select>
+              </dd>
+              <dd class="form_data">
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">性別</dt>
+              <dd class="form_data">
+                <div class="form_group">
+                  <label class="form_radio horizone far"><span class="horizone near"><input type="radio" name="sex" checked></span><span class="horizone">男</span></label><!--
+                  --><label class="form_radio horizone far"><span class="horizone near"><input type="radio" name="sex"></span><span class="horizone">女</span></label>
+                </div>
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">生年月日</dt>
+              <dd class="form_data">
+                <div class="form_group">
+                  <span class="horizone near"><select class="form_select">
+                    <option>2000</option>
+                  </select></span><!--
+                  --><span class="horizone far">年</span><!--
+                  --><span class="horizone near"><select class="form_select">
+                    <option>1</option>
+                  </select></span><!--
+                  --><span class="horizone far">月</span><!--
+                  --><span class="horizone near"><select class="form_select">
+                    <option>1</option>
+                  </select></span><!--
+                  --><span class="horizone far">日</span>
+                </div>
+              <dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">郵便番号</dt>
+              <dd class="form_data">
+                <div class="form_group">
+                  <span class="horizone far"><input type="text" class="form_text zip"></span><!--
+                  --><span class="horizone"><span class="btn">住所検索</span></span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">市町村区</dt>
+              <dd class="form_data">
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">住所</dt>
+              <dd class="form_data">
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">マンション名など</dt>
+              <dd class="form_data">
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">電話番号</dt>
+              <dd class="form_data">
+                <input type="text" class="form_text">
+              </dd>
+            </dl>
+            <dl class="dl_form">
+              <dt class="form_title">コメント</dt>
+              <dd class="form_data">
+                <textarea class="form_textarea comment"></textarea>
+              </dd>
+            </dl>
+          </form>
+        </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/5385189.js"></script>
+
+  		  <p class="txt_sentence docs_explan">検索用フォームです。</p>
+  		  <div class="example">
+    		  <div class="form_search">
+    		    <input type="text" class="form_text"><button class="btn">検索</button>
+    		  </div>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/16d4d48e965e935e75d0.js"></script>
+
+  		  <h2 class="heading2_lv2 docs_heading2" id="button">button</h2>
+  		  <p class="txt_sentence docs_explan">各種ボタンです。</p>
+  		  <div class="example">
+          <table class="table_horizon">
+            <colgroup>
+              <col width="30%">
+              <col width="70%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>ノーマル</td>
+                <td><div class="btn">normal</div></td>
+              </tr>
+              <tr>
+                <td>エラー</td>
+                <td><div class="btn_error">error</div></td>
+              </tr>
+              <tr>
+                <td>注意喚起</td>
+                <td><div class="btn_warning">warning</div></td>
+              </tr>
+              <tr>
+                <td>お知らせ</td>
+                <td><div class="btn_info">info</div></td>
+              </tr>
+              <tr>
+                <td>無効</td>
+                <td><div class="btn_disabled">disable</div></td>
+              </tr>
+            </tbody>
+          </table>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/4a2c3b3d6c1830375c02.js"></script>
+  		  
+  		  <p class="txt_sentence docs_explan">ボタンサイズです。</p>
+  		  <div class="example">
+          <table class="table_horizon">
+            <colgroup>
+              <col width="20%">
+              <col width="80%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>特大</td>
+                <td><div class="btn btn_huge">huge</div></td>
+              </tr>
+              <tr>
+                <td>大</td>
+                <td><div class="btn btn_large">large</div></td>
+              </tr>
+              <tr>
+                <td>中</td>
+                <td><div class="btn btn_medium">medium</div></td>
+              </tr>
+              <tr>
+                <td>小</td>
+                <td><div class="btn btn_small">small</div></td>
+              </tr>
+            </tbody>
+          </table>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/fe7db7850e426cc9eb4e.js"></script>
+  		  
+  		  <h2 class="heading2_lv2 docs_heading2" id="sparate_line">sparate line</h2>
+  		  <p class="txt_sentence docs_explan">項目を区切る際に使用するラインです。</p>
+  		  <div class="example">
+    		  <hr class="separator_solid"><br>
+    		  <hr class="separator_dashed"><br>
+    		  <hr class="separator_dotted"><br>
+  		  </div>
+  		  <script src="https://gist.github.com/yoshi-fujiko/c96ed6d7c78616777aee.js"></script>
+  		
+  		</section>
+    		
+      </div>
+  </div>
+
+  <footer class="footer" id="docs_footer">
+    <p class="ver">version α</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

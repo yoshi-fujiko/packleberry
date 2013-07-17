@@ -1,0 +1,4 @@
+.heading1_lv2 {
+  @include heading1Lv2;
+  @include textBold;
+}
