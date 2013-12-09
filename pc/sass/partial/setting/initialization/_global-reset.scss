@@ -19,10 +19,8 @@ time, mark, audio, video, input, button, select, textarea {
 html {
   @include reset-body;
 }
-ol, ul {
-&.unstyled {
+.unstyled {
   @include reset-list-style;
-}
 }
 table {
   @include reset-table;
