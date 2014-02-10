@@ -82,10 +82,17 @@
   text-align: center;
 }
 
+@mixin textAlignHoge {
+}
+
 @mixin textAlignRight {
   text-align: right;
 }
 
 @mixin hoge {
  color: #ff00ff;
+}
+
+@mixin textColor($color: #fff) {
+	color: $color;
 }
