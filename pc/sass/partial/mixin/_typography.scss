@@ -85,3 +85,8 @@
 @mixin textAlignRight {
   text-align: right;
 }
+
+@mixin textColor($color: #fff) {
+	color: $color;
+}
+}
